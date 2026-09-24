@@ -1,0 +1,12 @@
+# Inherit the official OpenAI ViT-B/16 architecture and full 80k schedule.
+_BASE_: vitb_384.yaml
+MODEL:
+  WEIGHTS: ""
+  SEM_SEG_HEAD:
+    NUM_CLASSES: 17
+    TRAIN_CLASS_JSON: "datasets/DLRSD.json"
+    TEST_CLASS_JSON: "datasets/DLRSD.json"
+DATASETS:
+  TRAIN: ("DLRSD_train_sem_seg",)
+  TEST: ("DLRSD_val_sem_seg",)
+OUTPUT_DIR: "output/original_openai_vitb16_dlrsd"

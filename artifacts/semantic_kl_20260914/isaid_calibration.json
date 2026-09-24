@@ -1,0 +1,76 @@
+{
+  "summary": {
+    "loss_sem_seg": 1.34769669175148,
+    "loss_organ": 5.588367821474094e-05,
+    "loss_rs_dino_context": 9.48196629906306e-05,
+    "loss_remote_clip_semantic": 2.4867866272870742e-06,
+    "raw_semantic_kl": 0.024867866272870742,
+    "raw_context": 6.32131086604204,
+    "optimizer_steps": 0,
+    "batches": 4,
+    "images": 16,
+    "config": "configs/clip_vitb_384_isaid_attr64_semantic_kl.yaml",
+    "student_gradient_finite_nonzero": true,
+    "teacher_frozen_unregistered": true,
+    "suggested_semantic_weight": 0.004021253729721622,
+    "suggested_context_weight": 1.5819503599672352e-05
+  },
+  "batches": [
+    {
+      "loss_sem_seg": 1.3375436067581177,
+      "loss_organ": 5.577876800089143e-05,
+      "loss_rs_dino_context": 9.374902583658695e-05,
+      "loss_remote_clip_semantic": 3.061773895751685e-06,
+      "raw_semantic_kl": 0.03061773895751685,
+      "raw_context": 6.249935055772463,
+      "files": [
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/iSAID_split/train/images/P2732_206_462_2060_2316.png",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/iSAID_split/train/images/P2642_824_1080_5974_6230.png",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/iSAID_split/train/images/P1900_546_802_440_696.png",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/iSAID_split/train/images/P1464_206_462_412_668.png"
+      ]
+    },
+    {
+      "loss_sem_seg": 1.3459420204162598,
+      "loss_organ": 5.526015593204647e-05,
+      "loss_rs_dino_context": 9.841748396866024e-05,
+      "loss_remote_clip_semantic": 2.0302900338720065e-06,
+      "raw_semantic_kl": 0.020302900338720065,
+      "raw_context": 6.561165597910682,
+      "files": [
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/iSAID_split/train/images/P0147_993_1249_824_1080.png",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/iSAID_split/train/images/P2014_824_1080_2266_2522.png",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/iSAID_split/train/images/P0340_824_1080_2629_2885.png",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/iSAID_split/train/images/P1866_2472_2728_1236_1492.png"
+      ]
+    },
+    {
+      "loss_sem_seg": 1.3531373739242554,
+      "loss_organ": 5.651219908031635e-05,
+      "loss_rs_dino_context": 9.701975795906037e-05,
+      "loss_remote_clip_semantic": 2.2935664674150757e-06,
+      "raw_semantic_kl": 0.022935664674150757,
+      "raw_context": 6.4679838639373575,
+      "files": [
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/iSAID_split/train/images/P1393_1030_1286_1030_1286.png",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/iSAID_split/train/images/P1445_1236_1492_3914_4170.png",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/iSAID_split/train/images/P0010_0_256_1030_1286.png",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/iSAID_split/train/images/P0516_824_1080_206_462.png"
+      ]
+    },
+    {
+      "loss_sem_seg": 1.3541637659072876,
+      "loss_organ": 5.59835898457095e-05,
+      "loss_rs_dino_context": 9.009238419821486e-05,
+      "loss_remote_clip_semantic": 2.5615161121095298e-06,
+      "raw_semantic_kl": 0.025615161121095298,
+      "raw_context": 6.006158946547657,
+      "files": [
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/iSAID_split/train/images/P1908_412_668_618_874.png",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/iSAID_split/train/images/P1947_412_668_0_256.png",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/iSAID_split/train/images/P0760_206_462_1183_1439.png",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/iSAID_split/train/images/P1481_2266_2522_1648_1904.png"
+      ]
+    }
+  ]
+}

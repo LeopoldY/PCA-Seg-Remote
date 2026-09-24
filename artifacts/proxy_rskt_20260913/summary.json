@@ -1,0 +1,282 @@
+[
+  {
+    "train": "DLRSD",
+    "model": "ViT-B-32",
+    "comparison_dataset": "iSAID",
+    "count": 15,
+    "mean_original_cos": 0.8173422654469807,
+    "mean_proxy_cos": 0.8480571309725443,
+    "mean_expanded_gain": 0.03301755587259928,
+    "improved_count": 12
+  },
+  {
+    "train": "DLRSD",
+    "model": "ViT-B-32",
+    "comparison_dataset": "LoveDA",
+    "count": 6,
+    "mean_original_cos": 0.8599201540152231,
+    "mean_proxy_cos": 0.8972693582375845,
+    "mean_expanded_gain": 0.037349204222361244,
+    "improved_count": 6
+  },
+  {
+    "train": "DLRSD",
+    "model": "ViT-B-32",
+    "comparison_dataset": "Potsdam",
+    "count": 5,
+    "mean_original_cos": 0.8554671406745911,
+    "mean_proxy_cos": 0.8848586440086365,
+    "mean_expanded_gain": 0.02939150333404541,
+    "improved_count": 5
+  },
+  {
+    "train": "DLRSD",
+    "model": "ViT-B-32",
+    "comparison_dataset": "Vaihingen",
+    "count": 5,
+    "mean_original_cos": 0.8554671406745911,
+    "mean_proxy_cos": 0.8848586440086365,
+    "mean_expanded_gain": 0.02939150333404541,
+    "improved_count": 5
+  },
+  {
+    "train": "DLRSD",
+    "model": "ViT-B-32",
+    "comparison_dataset": "UDD5",
+    "count": 4,
+    "mean_original_cos": 0.8614026457071304,
+    "mean_proxy_cos": 0.8836685419082642,
+    "mean_expanded_gain": 0.022265896201133728,
+    "improved_count": 4
+  },
+  {
+    "train": "DLRSD",
+    "model": "ViT-B-32",
+    "comparison_dataset": "VDD",
+    "count": 6,
+    "mean_original_cos": 0.8684334953625997,
+    "mean_proxy_cos": 0.8910298546155294,
+    "mean_expanded_gain": 0.022596359252929688,
+    "improved_count": 6
+  },
+  {
+    "train": "DLRSD",
+    "model": "ViT-B-32",
+    "comparison_dataset": "uavid",
+    "count": 7,
+    "mean_original_cos": 0.8572038156645638,
+    "mean_proxy_cos": 0.8805297953741891,
+    "mean_expanded_gain": 0.023325979709625244,
+    "improved_count": 7
+  },
+  {
+    "train": "iSAID",
+    "model": "ViT-B-32",
+    "comparison_dataset": "DLRSD",
+    "count": 17,
+    "mean_original_cos": 0.8340110007454368,
+    "mean_proxy_cos": 0.860949225285474,
+    "mean_expanded_gain": 0.027101702549878287,
+    "improved_count": 15
+  },
+  {
+    "train": "iSAID",
+    "model": "ViT-B-32",
+    "comparison_dataset": "LoveDA",
+    "count": 6,
+    "mean_original_cos": 0.8269943793614706,
+    "mean_proxy_cos": 0.8558622002601624,
+    "mean_expanded_gain": 0.028867820898691814,
+    "improved_count": 6
+  },
+  {
+    "train": "iSAID",
+    "model": "ViT-B-32",
+    "comparison_dataset": "Potsdam",
+    "count": 5,
+    "mean_original_cos": 0.8308410286903382,
+    "mean_proxy_cos": 0.8544258713722229,
+    "mean_expanded_gain": 0.023584842681884766,
+    "improved_count": 5
+  },
+  {
+    "train": "iSAID",
+    "model": "ViT-B-32",
+    "comparison_dataset": "Vaihingen",
+    "count": 5,
+    "mean_original_cos": 0.8308410286903382,
+    "mean_proxy_cos": 0.8544258713722229,
+    "mean_expanded_gain": 0.023584842681884766,
+    "improved_count": 5
+  },
+  {
+    "train": "iSAID",
+    "model": "ViT-B-32",
+    "comparison_dataset": "UDD5",
+    "count": 4,
+    "mean_original_cos": 0.8581885695457458,
+    "mean_proxy_cos": 0.8770978301763535,
+    "mean_expanded_gain": 0.018909260630607605,
+    "improved_count": 4
+  },
+  {
+    "train": "iSAID",
+    "model": "ViT-B-32",
+    "comparison_dataset": "VDD",
+    "count": 6,
+    "mean_original_cos": 0.8463885386784872,
+    "mean_proxy_cos": 0.8731852471828461,
+    "mean_expanded_gain": 0.02679670850435893,
+    "improved_count": 6
+  },
+  {
+    "train": "iSAID",
+    "model": "ViT-B-32",
+    "comparison_dataset": "uavid",
+    "count": 7,
+    "mean_original_cos": 0.8326376932007926,
+    "mean_proxy_cos": 0.8537125161715916,
+    "mean_expanded_gain": 0.02107482297079904,
+    "improved_count": 7
+  },
+  {
+    "train": "DLRSD",
+    "model": "ViT-L-14",
+    "comparison_dataset": "iSAID",
+    "count": 15,
+    "mean_original_cos": 0.8607006231943767,
+    "mean_proxy_cos": 0.8601985494295756,
+    "mean_expanded_gain": 0.004862634340922037,
+    "improved_count": 8
+  },
+  {
+    "train": "DLRSD",
+    "model": "ViT-L-14",
+    "comparison_dataset": "LoveDA",
+    "count": 6,
+    "mean_original_cos": 0.9088690479596456,
+    "mean_proxy_cos": 0.9131065209706625,
+    "mean_expanded_gain": 0.008222967386245728,
+    "improved_count": 4
+  },
+  {
+    "train": "DLRSD",
+    "model": "ViT-L-14",
+    "comparison_dataset": "Potsdam",
+    "count": 5,
+    "mean_original_cos": 0.9140770673751831,
+    "mean_proxy_cos": 0.9106944561004638,
+    "mean_expanded_gain": 0.005516922473907471,
+    "improved_count": 2
+  },
+  {
+    "train": "DLRSD",
+    "model": "ViT-L-14",
+    "comparison_dataset": "Vaihingen",
+    "count": 5,
+    "mean_original_cos": 0.9140770673751831,
+    "mean_proxy_cos": 0.9106944561004638,
+    "mean_expanded_gain": 0.005516922473907471,
+    "improved_count": 2
+  },
+  {
+    "train": "DLRSD",
+    "model": "ViT-L-14",
+    "comparison_dataset": "UDD5",
+    "count": 4,
+    "mean_original_cos": 0.9044792354106903,
+    "mean_proxy_cos": 0.8976925164461136,
+    "mean_expanded_gain": 0.0037640035152435303,
+    "improved_count": 1
+  },
+  {
+    "train": "DLRSD",
+    "model": "ViT-L-14",
+    "comparison_dataset": "VDD",
+    "count": 6,
+    "mean_original_cos": 0.9054792523384094,
+    "mean_proxy_cos": 0.9009525974591573,
+    "mean_expanded_gain": 0.0029943188031514487,
+    "improved_count": 2
+  },
+  {
+    "train": "DLRSD",
+    "model": "ViT-L-14",
+    "comparison_dataset": "uavid",
+    "count": 7,
+    "mean_original_cos": 0.9034872140203204,
+    "mean_proxy_cos": 0.8979206766401019,
+    "mean_expanded_gain": 0.0028532232557024273,
+    "improved_count": 3
+  },
+  {
+    "train": "iSAID",
+    "model": "ViT-L-14",
+    "comparison_dataset": "DLRSD",
+    "count": 17,
+    "mean_original_cos": 0.8748685296844033,
+    "mean_proxy_cos": 0.8968361546011532,
+    "mean_expanded_gain": 0.02196762491674984,
+    "improved_count": 17
+  },
+  {
+    "train": "iSAID",
+    "model": "ViT-L-14",
+    "comparison_dataset": "LoveDA",
+    "count": 6,
+    "mean_original_cos": 0.8609299063682556,
+    "mean_proxy_cos": 0.8885294596354166,
+    "mean_expanded_gain": 0.027599553267161053,
+    "improved_count": 6
+  },
+  {
+    "train": "iSAID",
+    "model": "ViT-L-14",
+    "comparison_dataset": "Potsdam",
+    "count": 5,
+    "mean_original_cos": 0.8740893125534057,
+    "mean_proxy_cos": 0.9002408027648926,
+    "mean_expanded_gain": 0.026151490211486817,
+    "improved_count": 5
+  },
+  {
+    "train": "iSAID",
+    "model": "ViT-L-14",
+    "comparison_dataset": "Vaihingen",
+    "count": 5,
+    "mean_original_cos": 0.8740893125534057,
+    "mean_proxy_cos": 0.9002408027648926,
+    "mean_expanded_gain": 0.026151490211486817,
+    "improved_count": 5
+  },
+  {
+    "train": "iSAID",
+    "model": "ViT-L-14",
+    "comparison_dataset": "UDD5",
+    "count": 4,
+    "mean_original_cos": 0.8917845189571381,
+    "mean_proxy_cos": 0.9084412753582001,
+    "mean_expanded_gain": 0.020121246576309204,
+    "improved_count": 3
+  },
+  {
+    "train": "iSAID",
+    "model": "ViT-L-14",
+    "comparison_dataset": "VDD",
+    "count": 6,
+    "mean_original_cos": 0.8801523447036743,
+    "mean_proxy_cos": 0.8980748057365417,
+    "mean_expanded_gain": 0.020232121149698894,
+    "improved_count": 5
+  },
+  {
+    "train": "iSAID",
+    "model": "ViT-L-14",
+    "comparison_dataset": "uavid",
+    "count": 7,
+    "mean_original_cos": 0.8694725802966526,
+    "mean_proxy_cos": 0.8943456666810172,
+    "mean_expanded_gain": 0.024873086384364536,
+    "improved_count": 7
+  }
+]

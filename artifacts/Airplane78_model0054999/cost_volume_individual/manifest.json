@@ -1,0 +1,183 @@
+{
+  "checkpoint": "/mnt/data6/yc/open-vocab/PCA-Seg-Remote/output/eva_vitb_384_dlrsd_attr64_dual_teacher_rskt_protocol_4gpu_bs2/model_0054999.pth",
+  "checkpoint_sha256_from_source": "94915018be9a22f465e33dae94343cc03a91d738f01136a4843cf4d23982d29f",
+  "image": "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD/imgs/Airplane78.jpg",
+  "classes": [
+    "airplane",
+    "bare soil",
+    "buildings",
+    "cars",
+    "chaparral",
+    "court",
+    "dock",
+    "field",
+    "grass",
+    "mobile home",
+    "pavement",
+    "sand",
+    "sea",
+    "ship",
+    "tanks",
+    "trees",
+    "water"
+  ],
+  "raw_shape": [
+    17,
+    4,
+    1,
+    24,
+    24
+  ],
+  "raw_axes": [
+    "class",
+    "aligned_rotation",
+    "prompt",
+    "height",
+    "width"
+  ],
+  "capture": "Actual input of aggregator.conv1 in normal inference; after attribute_adapter and image/text cosine correlation, before cost embedding and spatial/class aggregation.",
+  "class_reduction": "Arithmetic mean of signed cosine similarities over aligned rotation and prompt dimensions; no absolute value or RMS.",
+  "normalization": "Per class: clip((mean_cost-P02)/(P98-P02),0,1)**1.5; constant maps zero.",
+  "prediction_check": {
+    "same_argmax_as_original": true,
+    "max_score_abs_diff": 0.0
+  },
+  "records": [
+    {
+      "class_id": 0,
+      "class": "airplane",
+      "p02": 0.05217719078063965,
+      "p98": 0.21887385845184326,
+      "raw_min": 0.04951772093772888,
+      "raw_max": 0.2340451180934906
+    },
+    {
+      "class_id": 1,
+      "class": "bare soil",
+      "p02": -0.010496808215975761,
+      "p98": 0.1745774820446968,
+      "raw_min": -0.031403496861457825,
+      "raw_max": 0.1830444037914276
+    },
+    {
+      "class_id": 2,
+      "class": "buildings",
+      "p02": -0.007887829560786486,
+      "p98": 0.07255817204713821,
+      "raw_min": -0.013142086565494537,
+      "raw_max": 0.09712614119052887
+    },
+    {
+      "class_id": 3,
+      "class": "cars",
+      "p02": 0.024821214377880096,
+      "p98": 0.1057879626750946,
+      "raw_min": 0.015876010060310364,
+      "raw_max": 0.12241827696561813
+    },
+    {
+      "class_id": 4,
+      "class": "chaparral",
+      "p02": 0.01569205056875944,
+      "p98": 0.14423306286334991,
+      "raw_min": 0.005334759131073952,
+      "raw_max": 0.15802979469299316
+    },
+    {
+      "class_id": 5,
+      "class": "court",
+      "p02": -0.0023906483547762036,
+      "p98": 0.10086988657712936,
+      "raw_min": -0.02401481755077839,
+      "raw_max": 0.106983482837677
+    },
+    {
+      "class_id": 6,
+      "class": "dock",
+      "p02": 0.005487598013132811,
+      "p98": 0.08895791321992874,
+      "raw_min": -0.011639732867479324,
+      "raw_max": 0.09167205542325974
+    },
+    {
+      "class_id": 7,
+      "class": "field",
+      "p02": -0.007041182601824403,
+      "p98": 0.09096493199467659,
+      "raw_min": -0.023057851940393448,
+      "raw_max": 0.09987936913967133
+    },
+    {
+      "class_id": 8,
+      "class": "grass",
+      "p02": 0.026637581177055836,
+      "p98": 0.19275640696287155,
+      "raw_min": 0.020366370677947998,
+      "raw_max": 0.2070518285036087
+    },
+    {
+      "class_id": 9,
+      "class": "mobile home",
+      "p02": -0.0037620295770466328,
+      "p98": 0.1098671406507492,
+      "raw_min": -0.03047359362244606,
+      "raw_max": 0.11799439042806625
+    },
+    {
+      "class_id": 10,
+      "class": "pavement",
+      "p02": 0.06240136735141277,
+      "p98": 0.29080644249916077,
+      "raw_min": 0.03733190894126892,
+      "raw_max": 0.2983217239379883
+    },
+    {
+      "class_id": 11,
+      "class": "sand",
+      "p02": -0.02497211843729019,
+      "p98": 0.26012490689754486,
+      "raw_min": -0.055982451885938644,
+      "raw_max": 0.26964136958122253
+    },
+    {
+      "class_id": 12,
+      "class": "sea",
+      "p02": 0.0343471746891737,
+      "p98": 0.13026008754968643,
+      "raw_min": 0.01209128089249134,
+      "raw_max": 0.13285565376281738
+    },
+    {
+      "class_id": 13,
+      "class": "ship",
+      "p02": 0.02949963603168726,
+      "p98": 0.09350788220763206,
+      "raw_min": 0.018449965864419937,
+      "raw_max": 0.10484124720096588
+    },
+    {
+      "class_id": 14,
+      "class": "tanks",
+      "p02": 0.005438689608126879,
+      "p98": 0.06980500742793083,
+      "raw_min": -0.013397390954196453,
+      "raw_max": 0.10199223458766937
+    },
+    {
+      "class_id": 15,
+      "class": "trees",
+      "p02": -0.012094198726117611,
+      "p98": 0.07051562517881393,
+      "raw_min": -0.017139997333288193,
+      "raw_max": 0.10143004357814789
+    },
+    {
+      "class_id": 16,
+      "class": "water",
+      "p02": 0.026323746889829636,
+      "p98": 0.09412197768688202,
+      "raw_min": 0.01994134858250618,
+      "raw_max": 0.12236230075359344
+    }
+  ]
+}

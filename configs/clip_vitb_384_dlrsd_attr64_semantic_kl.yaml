@@ -1,0 +1,17 @@
+_BASE_: clip_vitb_384_dlrsd_attr64_dual_teacher_dual_feature_moe.yaml
+MODEL:
+  PROMPT_ENSEMBLE_TYPE: "rs"
+  SEM_SEG_HEAD:
+    REMOTE_CLIP_DISTILL:
+      OBJECTIVE: "semantic_kl"
+      SAME_GRID: true
+      INPUT_SIZE: [768, 768]
+      TEMPERATURE: 2.0
+      LOGIT_SCALE: 10.0
+      LOSS_WEIGHT: 6.0e-3
+    RS_DINO_DISTILL:
+      LOSS_WEIGHT: 1.6e-5
+    ATTR_FUSION:
+      DATABASE_PATH: "attributes_text/rskt_seg/DLRSD_train_desc_openai_b16_cluster_64_embedding_bank.pth"
+      TOP_K: 0.9
+OUTPUT_DIR: "output/dlrsd_clip_vitb_openai_attr64_semantic_kl"

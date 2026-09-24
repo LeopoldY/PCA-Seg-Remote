@@ -1,0 +1,20 @@
+_BASE_: eva_vitb_384_dlrsd_attr64_declip_rskt_protocol.yaml
+
+MODEL:
+  SEM_SEG_HEAD:
+    CLIP_ROTATION:
+      ENABLED: true
+      NUM_DIRECTIONS: 4
+    FEATURE_FUSION:
+      TYPE: "dual_feature_moe"
+    RS_DINO:
+      ENABLED: false
+    RS_DINO_DISTILL:
+      ENABLED: true
+      WEIGHTS: "pretrained/RSIB.pth"
+      INPUT_SIZE: [384, 384]
+      TARGET_GRID: [24, 24]
+      LOSS_WEIGHT: 0.25
+      STUDENT_CONTEXT: "q"
+
+OUTPUT_DIR: "output/eva_vitb_384_dlrsd_attr64_rs_dino_rskt_protocol_4gpu_bs2"

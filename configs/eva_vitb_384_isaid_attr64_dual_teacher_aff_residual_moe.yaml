@@ -1,0 +1,8 @@
+_BASE_: eva_vitb_384_isaid_attr64_dual_teacher_rskt_protocol.yaml
+
+MODEL:
+  SEM_SEG_HEAD:
+    FEATURE_FUSION:
+      TYPE: "aff_residual_moe"
+
+OUTPUT_DIR: "output/eva_vitb_384_isaid_attr64_dual_teacher_aff_residual_moe_2gpu_bs4"

@@ -1,0 +1,35 @@
+_BASE_: eva_vitb_384.yaml
+
+MODEL:
+  SEM_SEG_HEAD:
+    NUM_CLASSES: 15
+    TRAIN_CLASS_JSON: "datasets/iSAID.json"
+    TEST_CLASS_JSON: "datasets/iSAID.json"
+    CACHE_DIR: "pretrained/EVA02_CLIP_B_psz16_s8B.pt"
+    ATTR_FUSION:
+      ENABLED: true
+      DATABASE_PATH: "attributes_text/rskt_seg/rskt_seg_train_desc_eva02_clip_b16_original_cluster_112_embedding_bank.pth"
+      NUM_CLUSTERS: 112
+      TOP_K: 0.9
+
+DATASETS:
+  TRAIN: ("iSAID_train_sem_seg",)
+  TEST: ("iSAID_val_sem_seg",)
+
+# Match the official RSKT-Seg ViT-B iSAID optimization protocol.
+SOLVER:
+  IMS_PER_BATCH: 8
+  LR_SCHEDULER_NAME: "WarmupCosineLR"
+  BASE_LR: 0.0002
+  MAX_ITER: 30000
+  WEIGHT_DECAY: 0.0001
+  OPTIMIZER: "ADAMW"
+  BACKBONE_MULTIPLIER: 0.0
+  CLIP_MULTIPLIER: 0.01
+  CHECKPOINT_PERIOD: 5000
+
+TEST:
+  EVAL_PERIOD: 5000
+  SLIDING_WINDOW: false
+
+OUTPUT_DIR: "output/eva_vitb_384_isaid_attr112_rskt_protocol_4gpu_bs2"

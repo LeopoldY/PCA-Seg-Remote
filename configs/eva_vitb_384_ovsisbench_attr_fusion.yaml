@@ -1,0 +1,30 @@
+_BASE_: eva_vitb_384.yaml
+
+MODEL:
+  SEM_SEG_HEAD:
+    NUM_CLASSES: 31
+    TRAIN_CLASS_JSON: "datasets/ovsisbench_rs31.json"
+    TEST_CLASS_JSON: "datasets/ovsisbench_rs31.json"
+    CACHE_DIR: "pretrained/EVA02_CLIP_B_psz16_s8B.pt"
+    ATTR_FUSION:
+      ENABLED: true
+      DATABASE_PATH: "attributes_text/rskt_seg/rskt_seg_train_desc_eva02_clip_b16_original_cluster_112_embedding_bank.pth"
+      NUM_CLUSTERS: 112
+      TOP_K: 0.9
+
+DATASETS:
+  TRAIN: ("ovsisbench_dlrsd_train_sem_seg", "ovsisbench_isaid_train_sem_seg")
+  TEST: ("ovsisbench_dlrsd_val_sem_seg", "ovsisbench_isaid_val_sem_seg")
+
+SOLVER:
+  # Four GPUs x two images/GPU = global batch 8, without gradient accumulation.
+  IMS_PER_BATCH: 8
+  BASE_LR: 0.0005
+  MAX_ITER: 80000
+  CHECKPOINT_PERIOD: 10000
+
+TEST:
+  EVAL_PERIOD: 10000
+  SLIDING_WINDOW: false
+
+OUTPUT_DIR: "output/eva_vitb_384_ovsisbench_rs31_attr112_4gpu_bs2"

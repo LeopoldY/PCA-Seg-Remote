@@ -1,0 +1,12 @@
+# Inherit the official OpenAI ViT-B/16 architecture and full 80k schedule.
+_BASE_: vitb_384.yaml
+MODEL:
+  WEIGHTS: ""
+  SEM_SEG_HEAD:
+    NUM_CLASSES: 15
+    TRAIN_CLASS_JSON: "datasets/iSAID.json"
+    TEST_CLASS_JSON: "datasets/iSAID.json"
+DATASETS:
+  TRAIN: ("iSAID_train_sem_seg",)
+  TEST: ("iSAID_val_sem_seg",)
+OUTPUT_DIR: "output/original_openai_vitb16_isaid"

@@ -1,0 +1,3 @@
+# Additional dependency used only to rebuild ExCEL attribute databases.
+# This matches zwyang6/ExCEL's published environment.
+scikit-learn==1.0.2

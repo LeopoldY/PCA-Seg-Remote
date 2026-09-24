@@ -1,0 +1,15 @@
+{
+  "source": "/mnt/data6/yc/open-vocab/RSKT-Seg/RSKT_Seg/third_party/imagenet_templates.py",
+  "sha256": "cb66daada004e6db312eb3c0be7979fcbf0138ea898aae68c7b2e131bd84a32c",
+  "templates": [
+    "a photo of a {} in the scene",
+    "a remote sensing photo of {}",
+    "a land cover scene including {}",
+    "an aerial view of {}",
+    "a satallite image of {}",
+    "fields of {}",
+    "a landscape covered with {}",
+    "{} visible from above"
+  ],
+  "exact_match": true
+}

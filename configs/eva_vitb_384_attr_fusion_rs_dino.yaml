@@ -1,0 +1,8 @@
+_BASE_: eva_vitb_384_attr_fusion.yaml
+MODEL:
+  SEM_SEG_HEAD:
+    RS_DINO:
+      ENABLED: true
+      WEIGHTS: "pretrained/RSIB.pth"
+      FINETUNE: "frozen"
+      INPUT_SIZE: [384, 384]

@@ -1,0 +1,46 @@
+[
+  {
+    "file": "DLRSD_remoteclip_b32_expanded.pth",
+    "shape": [
+      884,
+      512
+    ],
+    "original_text_preserved": true,
+    "original_vector_prefix_preserved": true,
+    "all_proxy_formulas_verified": true,
+    "excel_bank_verified": true
+  },
+  {
+    "file": "DLRSD_remoteclip_l14_expanded.pth",
+    "shape": [
+      884,
+      768
+    ],
+    "original_text_preserved": true,
+    "original_vector_prefix_preserved": true,
+    "all_proxy_formulas_verified": true,
+    "excel_bank_verified": true
+  },
+  {
+    "file": "iSAID_remoteclip_b32_expanded.pth",
+    "shape": [
+      720,
+      512
+    ],
+    "original_text_preserved": true,
+    "original_vector_prefix_preserved": true,
+    "all_proxy_formulas_verified": true,
+    "excel_bank_verified": true
+  },
+  {
+    "file": "iSAID_remoteclip_l14_expanded.pth",
+    "shape": [
+      720,
+      768
+    ],
+    "original_text_preserved": true,
+    "original_vector_prefix_preserved": true,
+    "all_proxy_formulas_verified": true,
+    "excel_bank_verified": true
+  }
+]

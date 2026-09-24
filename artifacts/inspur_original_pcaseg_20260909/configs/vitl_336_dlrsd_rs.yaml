@@ -1,0 +1,13 @@
+# Official Large architecture, augmentation and optimization schedule.
+_BASE_: vitl_336.yaml
+MODEL:
+  WEIGHTS: ""
+  SEM_SEG_HEAD:
+    NUM_CLASSES: 17
+    TRAIN_CLASS_JSON: "datasets/DLRSD.json"
+    TEST_CLASS_JSON: "datasets/DLRSD.json"
+    CACHE_DIR: "/mnt/data6/yc/open-vocab/PCA-Seg-Remote/pretrained/ViT-L-14-336px.pt"
+DATASETS:
+  TRAIN: ("DLRSD_train_sem_seg",)
+  TEST: ("DLRSD_val_sem_seg",)
+OUTPUT_DIR: "output/original_openai_vitl336_dlrsd"

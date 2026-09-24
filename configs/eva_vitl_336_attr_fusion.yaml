@@ -1,0 +1,8 @@
+_BASE_: eva_vitl_336.yaml
+MODEL:
+  SEM_SEG_HEAD:
+    ATTR_FUSION:
+      ENABLED: true
+      DATABASE_PATH: "attributes_text/excel/ms_coco_desc_eva02_clip_l14_336_gpt4.0_cluster_224_embedding_bank.pth"
+      NUM_CLUSTERS: 224
+      TOP_K: 0.9

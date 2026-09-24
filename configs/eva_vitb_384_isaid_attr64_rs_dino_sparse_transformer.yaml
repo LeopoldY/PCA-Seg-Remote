@@ -1,0 +1,8 @@
+_BASE_: eva_vitb_384_isaid_attr64_rs_dino_rskt_protocol.yaml
+
+MODEL:
+  SEM_SEG_HEAD:
+    FEATURE_FUSION:
+      TYPE: "dual_route_sparse_transformer"
+
+OUTPUT_DIR: "output/eva_vitb_384_isaid_attr64_rs_dino_sparse_transformer"

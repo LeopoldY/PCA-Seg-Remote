@@ -1,0 +1,9 @@
+_BASE_: clip_vitl_336_isaid_attr64_dual_teacher_aff_residual_moe.yaml
+
+MODEL:
+  SEM_SEG_HEAD:
+    ATTR_FUSION:
+      DATABASE_PATH: "attributes_text/rskt_seg/iSAID_train_desc_remoteclip_l14_cluster_20_embedding_bank.pth"
+      NUM_CLUSTERS: 20
+
+OUTPUT_DIR: "output/clip_vitl_336_isaid_attr20_dual_teacher_aff_residual_moe_remoteclip_attr_2gpu_bs4"

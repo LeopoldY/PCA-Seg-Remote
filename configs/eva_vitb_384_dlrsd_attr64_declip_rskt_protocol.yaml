@@ -1,0 +1,34 @@
+_BASE_: eva_vitb_384.yaml
+
+MODEL:
+  SEM_SEG_HEAD:
+    NUM_CLASSES: 17
+    TRAIN_CLASS_JSON: "datasets/DLRSD.json"
+    TEST_CLASS_JSON: "datasets/DLRSD.json"
+    CACHE_DIR: "pretrained/declip_eva_b16_dinov2b_coco_full_retry1_epoch_latest_state_dict.pt"
+    ATTR_FUSION:
+      ENABLED: true
+      DATABASE_PATH: "attributes_text/rskt_seg/DLRSD_train_desc_declip_eva_b16_cluster_64_embedding_bank.pth"
+      NUM_CLUSTERS: 64
+      TOP_K: 0.9
+
+DATASETS:
+  TRAIN: ("DLRSD_train_sem_seg",)
+  TEST: ("DLRSD_val_sem_seg",)
+
+SOLVER:
+  IMS_PER_BATCH: 8
+  LR_SCHEDULER_NAME: "WarmupCosineLR"
+  BASE_LR: 0.0002
+  MAX_ITER: 60000
+  WEIGHT_DECAY: 0.0001
+  OPTIMIZER: "ADAMW"
+  BACKBONE_MULTIPLIER: 0.0
+  CLIP_MULTIPLIER: 0.01
+  CHECKPOINT_PERIOD: 5000
+
+TEST:
+  EVAL_PERIOD: 5000
+  SLIDING_WINDOW: false
+
+OUTPUT_DIR: "output/eva_vitb_384_dlrsd_attr64_declip_rskt_protocol_4gpu_bs2"

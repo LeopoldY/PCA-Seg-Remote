@@ -1,0 +1,26 @@
+_BASE_: clip_vitb_384_dlrsd_attr64_dual_teacher_aff_residual_moe.yaml
+
+MODEL:
+  SEM_SEG_HEAD:
+    CLIP_ROTATION:
+      ENABLED: true
+      NUM_DIRECTIONS: 4
+    FEATURE_FUSION:
+      TYPE: "dual_feature_moe"
+    RS_DINO_DISTILL:
+      ENABLED: true
+      LOSS_WEIGHT: 1.0e-5
+    REMOTE_CLIP_DISTILL:
+      ENABLED: true
+      LOSS_WEIGHT: 1.0e-4
+    ATTR_FUSION:
+      ENABLED: true
+      NUM_CLUSTERS: 64
+
+SOLVER:
+  IMS_PER_BATCH: 8
+  GRAD_ACCUM_STEPS: 1
+  BASE_LR: 0.0002
+  MAX_ITER: 60000
+
+OUTPUT_DIR: "output/clip_vitb_384_dlrsd_attr64_dual_teacher_dual_feature_moe_content1e4_context1e5_2gpu_bs4"

@@ -1,0 +1,11 @@
+_BASE_: eva_vitb_384_dlrsd_attr64_dual_teacher_rskt_protocol.yaml
+
+# Dual-teacher ablation: keep the complete distillation recipe while removing
+# the attribute embedding bank from both training and inference.
+MODEL:
+  SEM_SEG_HEAD:
+    ATTR_FUSION:
+      ENABLED: false
+      DATABASE_PATH: ""
+
+OUTPUT_DIR: "output/eva_vitb_384_dlrsd_no_attr_dual_teacher_declip_coco_2gpu_bs4"

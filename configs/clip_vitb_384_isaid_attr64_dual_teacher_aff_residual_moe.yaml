@@ -1,0 +1,21 @@
+_BASE_: eva_vitb_384_isaid_attr64_dual_teacher_aff_residual_moe.yaml
+
+# OpenAI ViT-B/16, matching RSKT-Seg configs/vitb_384_iSAID.yaml.
+# Keep the current dual-teacher and AFFResidualMoE experiment settings.
+MODEL:
+  WEIGHTS: ""
+  SEM_SEG_HEAD:
+    CLIP_PRETRAINED: "ViT-B/16"
+    CACHE_DIR: "/mnt/data6/yc/open-vocab/RSKT-Seg/pretrained/ViT-B-16.pt"
+    RS_DINO_DISTILL:
+      LOSS_WEIGHT: 0.1
+    REMOTE_CLIP_DISTILL:
+      LOSS_WEIGHT: 1.0
+    ATTR_FUSION:
+      DATABASE_PATH: "attributes_text/rskt_seg/iSAID_train_desc_remoteclip_b32_cluster_64_embedding_bank.pth"
+
+SOLVER:
+  IMS_PER_BATCH: 8
+  GRAD_ACCUM_STEPS: 1
+
+OUTPUT_DIR: "output/clip_vitb_384_isaid_attr64_dual_teacher_aff_residual_moe_remoteclip_attr_content1_context0p1_2gpu_bs4"

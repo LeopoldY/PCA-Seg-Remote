@@ -1,0 +1,9 @@
+_BASE_: eva_vitb_384.yaml
+MODEL:
+  SEM_SEG_HEAD:
+    CACHE_DIR: "pretrained/EVA02_CLIP_B_psz16_s8B.pt"
+    ATTR_FUSION:
+      ENABLED: true
+      DATABASE_PATH: "attributes_text/excel/ms_coco_desc_eva02_clip_b16_gpt4.0_cluster_224_embedding_bank.pth"
+      NUM_CLUSTERS: 224
+      TOP_K: 0.9

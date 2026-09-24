@@ -1,0 +1,76 @@
+{
+  "dlrsd": {
+    "output": "/mnt/data6/yc/open-vocab/PCA-Seg-Remote/output/smoke_dlrsd_dual_teacher_aff_residual_moe_2gpu_bs4",
+    "training": {
+      "data_time": 1.8370819399133325,
+      "iteration": 1,
+      "loss_organ": 4.32351162089617e-05,
+      "loss_remote_clip_content": 5.334192519512726e-05,
+      "loss_rs_dino_context": 4.96980728712515e-05,
+      "loss_sem_seg": 0.6834898889064789,
+      "lr": 0.0001,
+      "rank_data_time": 1.8311376334168017,
+      "total_loss": 0.6836361640207542
+    },
+    "miou": 8.042585355908585,
+    "teachers_enabled": true,
+    "teacher_weights": [
+      1e-05,
+      5e-05
+    ],
+    "aff_modules": 4,
+    "bn_updates": 2,
+    "checkpoint_iteration": 1,
+    "gradient_stride_warning": false,
+    "teacher_state_keys": [],
+    "teacher_state_prefixes_checked": [
+      "_rs_dino_distill_teacher.",
+      "_remote_clip_distill_teacher.",
+      "rs_dino_model."
+    ]
+  },
+  "isaid": {
+    "output": "/mnt/data6/yc/open-vocab/PCA-Seg-Remote/output/smoke_isaid_dual_teacher_aff_residual_moe_2gpu_bs4",
+    "training": {
+      "data_time": 1.8320561787113547,
+      "iteration": 1,
+      "loss_organ": 7.762672794342507e-05,
+      "loss_remote_clip_content": 5.453281482914463e-05,
+      "loss_rs_dino_context": 5.085614066047128e-05,
+      "loss_sem_seg": 0.5858518853783607,
+      "lr": 0.0001,
+      "rank_data_time": 1.8233959400095046,
+      "total_loss": 0.5860349010617938
+    },
+    "miou": 2.6260783361207216,
+    "teachers_enabled": true,
+    "teacher_weights": [
+      1e-05,
+      5e-05
+    ],
+    "aff_modules": 4,
+    "bn_updates": 2,
+    "checkpoint_iteration": 1,
+    "gradient_stride_warning": false,
+    "teacher_state_keys": [],
+    "teacher_state_prefixes_checked": [
+      "_rs_dino_distill_teacher.",
+      "_remote_clip_distill_teacher.",
+      "rs_dino_model."
+    ]
+  },
+  "sha256": {
+    "cat_seg/modeling/transformer/model.py": "1d1c978d2e14b7aa8c7908c6ab9aadc2bf80fcf0592b1f8efb41bd7f53de84de",
+    "cat_seg/modeling/transformer/aff_residual_moe.py": "0454be818c05aa0f39a0c4283f16d55fbaf77b913d537b07d7f4d851d1c80721",
+    "scripts/train_rs_dino_rskt_protocol_2gpu_bs4.sh": "61ead79e79cf8fb6bf9de91aa03ba3c8eda39519a553613f39db5bc822b87fa0",
+    "scripts/train_aff_residual_moe_2gpu_bs4.sh": "a13253f3d17d202614a002bcd0ad56ffab2a453f42e6c72ab655a4233a82480c",
+    "scripts/smoke_test_aff_residual_moe_2gpu.sh": "c01156191b7a2fb3e59236bdb61c03511ad4ff33a9bfbd16b77306626df4457d",
+    "configs/eva_vitb_384_dlrsd_attr64_rs_dino_aff_residual_moe.yaml": "c23506edb27dc67edca52e63aa1a8e11486abe17e5868f866fdab39f8ff63219",
+    "configs/eva_vitb_384_isaid_attr64_rs_dino_aff_residual_moe.yaml": "789fb16dfa77590aba2ed5687cdd6165d55bef1cb89e134ccd716eb53923b2a9",
+    "tools/test_aff_residual_moe.py": "5779e9459f02e87f3d25450adf76d95185c88e0fd3deba8ccd3a4fa33936b8bb",
+    "configs/eva_vitb_384_dlrsd_attr64_dual_teacher_aff_residual_moe.yaml": "4c3051e1f84351d02d51a6aa0873c66a9bccfffec3dc4c2a7b2f2c055fa065ad",
+    "configs/eva_vitb_384_isaid_attr64_dual_teacher_aff_residual_moe.yaml": "8ad01e3d0f238c16b68f893fdaeb7829cb92aca10c9aba8a8b164af9ab8139b9",
+    "scripts/train_dual_teacher_aff_residual_moe_2gpu_bs4.sh": "a95dfd7c41e7c6a148d138ec3d3554424116e8e8e5f5f14df853124c185eb238",
+    "scripts/smoke_test_dual_teacher_aff_residual_moe_2gpu.sh": "3eeafffad80a38393054bba0e21d1ea6b1809680690045fa60289b18ea8ed857"
+  }
+}

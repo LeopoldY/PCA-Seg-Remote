@@ -1,0 +1,76 @@
+{
+  "summary": {
+    "loss_sem_seg": 1.298922598361969,
+    "loss_organ": 5.5455339861509856e-05,
+    "loss_rs_dino_context": 9.03052969078999e-05,
+    "loss_remote_clip_semantic": 1.5769073797855526e-06,
+    "raw_semantic_kl": 0.015769073797855526,
+    "raw_context": 6.020353127193326,
+    "optimizer_steps": 0,
+    "batches": 4,
+    "images": 16,
+    "config": "configs/clip_vitb_384_dlrsd_attr64_semantic_kl.yaml",
+    "student_gradient_finite_nonzero": true,
+    "teacher_frozen_unregistered": true,
+    "suggested_semantic_weight": 0.006341526539979744,
+    "suggested_context_weight": 1.6610321336187096e-05
+  },
+  "batches": [
+    {
+      "loss_sem_seg": 1.3005729913711548,
+      "loss_organ": 5.557100666919723e-05,
+      "loss_rs_dino_context": 8.446019637631252e-05,
+      "loss_remote_clip_semantic": 1.7213144474226283e-06,
+      "raw_semantic_kl": 0.017213144474226283,
+      "raw_context": 5.630679758420835,
+      "files": [
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD_split/train/imgs/Cars855.jpg",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD_split/train/imgs/Pavement594.jpg",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD_split/train/imgs/Pavement793.jpg",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD_split/train/imgs/Pavement253.jpg"
+      ]
+    },
+    {
+      "loss_sem_seg": 1.298102855682373,
+      "loss_organ": 5.538063487620093e-05,
+      "loss_rs_dino_context": 8.976868411991745e-05,
+      "loss_remote_clip_semantic": 1.4251629636419239e-06,
+      "raw_semantic_kl": 0.014251629636419239,
+      "raw_context": 5.98457894132783,
+      "files": [
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD_split/train/imgs/Pavement471.jpg",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD_split/train/imgs/Bare_soil728.jpg",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD_split/train/imgs/Trees929.jpg",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD_split/train/imgs/Grass197.jpg"
+      ]
+    },
+    {
+      "loss_sem_seg": 1.3004064559936523,
+      "loss_organ": 5.5178883485496044e-05,
+      "loss_rs_dino_context": 9.066453640116379e-05,
+      "loss_remote_clip_semantic": 1.4663030469819205e-06,
+      "raw_semantic_kl": 0.014663030469819205,
+      "raw_context": 6.044302426744252,
+      "files": [
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD_split/train/imgs/Buildings664.jpg",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD_split/train/imgs/Buildings197.jpg",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD_split/train/imgs/Pavement837.jpg",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD_split/train/imgs/Buildings641.jpg"
+      ]
+    },
+    {
+      "loss_sem_seg": 1.2966080904006958,
+      "loss_organ": 5.569083441514522e-05,
+      "loss_rs_dino_context": 9.632777073420584e-05,
+      "loss_remote_clip_semantic": 1.6948490610957379e-06,
+      "raw_semantic_kl": 0.01694849061095738,
+      "raw_context": 6.421851382280389,
+      "files": [
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD_split/train/imgs/Cars207.jpg",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD_split/train/imgs/Cars625.jpg",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD_split/train/imgs/Mobile_home69.jpg",
+        "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD_split/train/imgs/Sand210.jpg"
+      ]
+    }
+  ]
+}

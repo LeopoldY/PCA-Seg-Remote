@@ -1,0 +1,14 @@
+_BASE_: eva_vitb_384.yaml
+MODEL:
+  SEM_SEG_HEAD:
+    CACHE_DIR: "pretrained/EVA02_CLIP_B_psz16_s8B.pt"
+    TEST_CLASS_JSON: "datasets/voc20.json"
+    ATTR_FUSION:
+      ENABLED: true
+      DATABASE_PATH: "attributes_text/excel/pascal_voc_desc_eva02_clip_b16_gpt4.0_cluster_112_embedding_bank.pth"
+      NUM_CLUSTERS: 112
+      TOP_K: 0.9
+DATASETS:
+  TEST: ("voc_2012_test_sem_seg",)
+TEST:
+  SLIDING_WINDOW: True

@@ -1,0 +1,60 @@
+===== iSAID-trained dual-teacher model: OVSISBench all-8 evaluation =====
+Started: 2026-09-09 12:55:51 +0800
+Best validation iteration: 29999
+Best validation mIoU: 85.91914680
+Checkpoint: /mnt/data6/yc/open-vocab/PCA-Seg-Remote/output/clip_vitl_336_isaid_attr64_dual_teacher_aff_residual_moe_2gpu_bs4/model_0029999.pth
+Feature fusion: aff_residual_moe
+GPUs: 2,3
+Inference: student only; both distillation teachers disabled
+
+===== DLRSD (DLRSD_all_sem_seg) =====
+[09/09 13:01:40] d2.engine.defaults INFO: Evaluation results for DLRSD_all_sem_seg in csv format:
+[09/09 13:01:40] d2.evaluation.testing INFO: copypaste: Task: sem_seg
+[09/09 13:01:40] d2.evaluation.testing INFO: copypaste: mIoU,fwIoU,mACC,pACC
+[09/09 13:01:40] d2.evaluation.testing INFO: copypaste: 30.6359,29.4515,60.8119,43.3285
+
+===== iSAID (iSAID_all_sem_seg) =====
+[09/09 13:20:49] d2.engine.defaults INFO: Evaluation results for iSAID_all_sem_seg in csv format:
+[09/09 13:20:49] d2.evaluation.testing INFO: copypaste: Task: sem_seg
+[09/09 13:20:49] d2.evaluation.testing INFO: copypaste: mIoU,fwIoU,mACC,pACC
+[09/09 13:20:49] d2.evaluation.testing INFO: copypaste: 95.5291,95.4250,97.6209,97.6411
+
+===== Potsdam (Potsdam_all_sem_seg) =====
+[09/09 13:35:47] d2.engine.defaults INFO: Evaluation results for Potsdam_all_sem_seg in csv format:
+[09/09 13:35:47] d2.evaluation.testing INFO: copypaste: Task: sem_seg
+[09/09 13:35:47] d2.evaluation.testing INFO: copypaste: mIoU,fwIoU,mACC,pACC
+[09/09 13:35:47] d2.evaluation.testing INFO: copypaste: 25.6085,29.6491,51.6747,41.3720
+
+===== Vaihingen (Vaihingen_all_sem_seg) =====
+[09/09 13:37:50] d2.engine.defaults INFO: Evaluation results for Vaihingen_all_sem_seg in csv format:
+[09/09 13:37:50] d2.evaluation.testing INFO: copypaste: Task: sem_seg
+[09/09 13:37:50] d2.evaluation.testing INFO: copypaste: mIoU,fwIoU,mACC,pACC
+[09/09 13:37:50] d2.evaluation.testing INFO: copypaste: 22.9884,29.2705,54.0418,40.7330
+
+===== UDD5 (UDD5_all_sem_seg) =====
+[09/09 13:39:31] d2.engine.defaults INFO: Evaluation results for UDD5_all_sem_seg in csv format:
+[09/09 13:39:31] d2.evaluation.testing INFO: copypaste: Task: sem_seg
+[09/09 13:39:31] d2.evaluation.testing INFO: copypaste: mIoU,fwIoU,mACC,pACC
+[09/09 13:39:31] d2.evaluation.testing INFO: copypaste: 29.4796,40.3177,57.3423,54.3934
+
+===== LoveDA (LoveDA_all_sem_seg) =====
+[09/09 13:42:38] d2.engine.defaults INFO: Evaluation results for LoveDA_all_sem_seg in csv format:
+[09/09 13:42:38] d2.evaluation.testing INFO: copypaste: Task: sem_seg
+[09/09 13:42:38] d2.evaluation.testing INFO: copypaste: mIoU,fwIoU,mACC,pACC
+[09/09 13:42:38] d2.evaluation.testing INFO: copypaste: 24.8271,23.9634,43.7055,36.1489
+
+===== UAVid (uavid_all_sem_seg) =====
+[09/09 13:44:45] d2.engine.defaults INFO: Evaluation results for uavid_all_sem_seg in csv format:
+[09/09 13:44:45] d2.evaluation.testing INFO: copypaste: Task: sem_seg
+[09/09 13:44:45] d2.evaluation.testing INFO: copypaste: mIoU,fwIoU,mACC,pACC
+[09/09 13:44:45] d2.evaluation.testing INFO: copypaste: 21.4797,35.0340,41.9721,48.3074
+
+===== VDD (VDD_all_sem_seg) =====
+[09/09 13:48:46] d2.engine.defaults INFO: Evaluation results for VDD_all_sem_seg in csv format:
+[09/09 13:48:46] d2.evaluation.testing INFO: copypaste: Task: sem_seg
+[09/09 13:48:46] d2.evaluation.testing INFO: copypaste: mIoU,fwIoU,mACC,pACC
+[09/09 13:48:46] d2.evaluation.testing INFO: copypaste: 32.0564,42.7977,56.8060,55.4508
+
+===== all-8 evaluation status =====
+Finished: 2026-09-09 13:48:48 +0800
+All eight OVSISBench evaluations completed successfully.

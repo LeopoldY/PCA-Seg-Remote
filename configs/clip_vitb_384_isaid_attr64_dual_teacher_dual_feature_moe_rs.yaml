@@ -1,0 +1,9 @@
+_BASE_: clip_vitb_384_isaid_attr64_dual_teacher_dual_feature_moe.yaml
+MODEL:
+  PROMPT_ENSEMBLE_TYPE: "rs"
+  SEM_SEG_HEAD:
+    REMOTE_CLIP_DISTILL:
+      SAME_GRID: true
+      INPUT_SIZE: [768, 768]
+    ATTR_FUSION:
+      TOP_K: 0.9

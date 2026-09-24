@@ -1,0 +1,163 @@
+{
+  "checkpoint": "/mnt/data6/yc/open-vocab/PCA-Seg-Remote/output/eva_vitb_384_dlrsd_attr64_dual_teacher_rskt_protocol_4gpu_bs2/model_0054999.pth",
+  "image": "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD/imgs/Airplane78.jpg",
+  "config": "output/eva_vitb_384_dlrsd_attr64_dual_teacher_rskt_protocol_4gpu_bs2/config.yaml",
+  "classes": [
+    "airplane",
+    "bare soil",
+    "buildings",
+    "cars",
+    "chaparral",
+    "court",
+    "dock",
+    "field",
+    "grass",
+    "mobile home",
+    "pavement",
+    "sand",
+    "sea",
+    "ship",
+    "tanks",
+    "trees",
+    "water"
+  ],
+  "shapes": {
+    "clip_direction_0": [
+      1,
+      576,
+      512
+    ],
+    "clip_direction_1": [
+      1,
+      576,
+      512
+    ],
+    "clip_direction_2": [
+      1,
+      576,
+      512
+    ],
+    "clip_direction_3": [
+      1,
+      576,
+      512
+    ],
+    "layer1_spatial_first": [
+      1,
+      128,
+      17,
+      24,
+      24
+    ],
+    "layer1_class_first": [
+      1,
+      128,
+      17,
+      24,
+      24
+    ],
+    "layer1_spatial_second": [
+      1,
+      128,
+      17,
+      24,
+      24
+    ],
+    "layer1_class_second": [
+      1,
+      128,
+      17,
+      24,
+      24
+    ],
+    "layer2_spatial_first": [
+      1,
+      128,
+      17,
+      24,
+      24
+    ],
+    "layer2_class_first": [
+      1,
+      128,
+      17,
+      24,
+      24
+    ],
+    "layer2_spatial_second": [
+      1,
+      128,
+      17,
+      24,
+      24
+    ],
+    "layer2_class_second": [
+      1,
+      128,
+      17,
+      24,
+      24
+    ],
+    "rs_dino_dense": [
+      1,
+      2304,
+      768
+    ],
+    "remoteclip_dense": [
+      1,
+      49,
+      512
+    ],
+    "segmentation_scores": [
+      17,
+      256,
+      256
+    ]
+  },
+  "teacher_weights": {
+    "rs_dino": "/mnt/data6/yc/open-vocab/PCA-Seg-Remote/pretrained/RSIB.pth",
+    "remoteclip": "/mnt/data6/yc/open-vocab/PCA-Seg-Remote/pretrained/RemoteCLIP-ViT-B-32.pt"
+  },
+  "dense_method": "PC1 of per-patch L2-normalized features, centered across patches; sign fixed by largest loading. Independent 2-98 percentile display scaling. PCA colors not comparable between models.",
+  "aggregation_method": "RMS across hidden channels for each class; common min-max scale across all spatial/class branches and all 17 classes. Not class probabilities.",
+  "remoteclip_method": "Standard frozen visual forward at 224x224; final patch tokens after ln_post and projection, excluding CLS. Native 7x7 grid.",
+  "inference": "Unmodified DefaultPredictor with saved training config, including 4 rotation directions; whole-image inference.",
+  "predicted_pixels": {
+    "airplane": 2597,
+    "bare soil": 0,
+    "buildings": 0,
+    "cars": 0,
+    "chaparral": 0,
+    "court": 0,
+    "dock": 0,
+    "field": 0,
+    "grass": 17699,
+    "mobile home": 0,
+    "pavement": 45240,
+    "sand": 0,
+    "sea": 0,
+    "ship": 0,
+    "tanks": 0,
+    "trees": 0,
+    "water": 0
+  },
+  "dense_pca": {
+    "CLIP": {
+      "native_grid": 24,
+      "explained_variance_pc1": 0.3903328478336334
+    },
+    "RS-DINO": {
+      "native_grid": 48,
+      "explained_variance_pc1": 0.24844296276569366
+    },
+    "RemoteCLIP": {
+      "native_grid": 7,
+      "explained_variance_pc1": 0.26913169026374817
+    }
+  },
+  "aggregation_display_range": [
+    0.32830390334129333,
+    1.1194816827774048
+  ],
+  "checkpoint_sha256": "94915018be9a22f465e33dae94343cc03a91d738f01136a4843cf4d23982d29f"
+}

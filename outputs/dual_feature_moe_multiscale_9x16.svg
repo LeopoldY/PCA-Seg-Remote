@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 900 1600" role="img" aria-label="Multi-scale DualFeatureMoE module diagram">
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8.2" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L9,5 L1,9 Z" fill="#344759"/></marker>
+  <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="8.2" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L9,5 L1,9 Z" fill="#587DAE"/></marker>
+  <marker id="arrow-gold" markerWidth="10" markerHeight="10" refX="8.2" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L9,5 L1,9 Z" fill="#D18B3D"/></marker>
+</defs>
+<rect width="900" height="1600" fill="#FFFFFF"/>
+
+<text x="450" y="62" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Georgia, Times New Roman, serif" font-size="38" font-weight="600">Multi-Scale ME-Parser</text>
+<path d="M118 103 H782" fill="none" stroke="#C9D2DB" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="450" y="133" text-anchor="middle" dominant-baseline="middle" fill="#526171" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400">Proposed DualFeatureMoE fusion block</text>
+<rect x="82" y="190" width="315" height="67" fill="#FFF0E8" stroke="#D18B3D" stroke-width="2" rx="8"/>
+<rect x="503" y="190" width="315" height="67" fill="#E9F2FC" stroke="#587DAE" stroke-width="2" rx="8"/>
+<text x="239" y="223" text-anchor="middle" dominant-baseline="middle" fill="#D18B3D" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="500">Spatial feature  S</text>
+<text x="660" y="223" text-anchor="middle" dominant-baseline="middle" fill="#587DAE" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="500">Class feature  K</text>
+<rect x="129" y="308" width="220" height="62" fill="white" stroke="#D18B3D" stroke-width="1.7" rx="7"/>
+<rect x="550" y="308" width="220" height="62" fill="white" stroke="#587DAE" stroke-width="1.7" rx="7"/>
+<text x="239" y="339" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400">1×1 Conv projection</text>
+<text x="660" y="339" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400">1×1 Conv projection</text>
+<path d="M239 257 V302" fill="none" stroke="#D18B3D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-gold)"/>
+<path d="M660 257 V302" fill="none" stroke="#587DAE" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+<path d="M239 370 V410 H425" fill="none" stroke="#D18B3D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-gold)"/>
+<path d="M660 370 V410 H475" fill="none" stroke="#587DAE" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+<circle cx="450" cy="410" r="24" fill="white" stroke="#344759" stroke-width="2"/>
+<text x="450" y="410" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Georgia, Times New Roman, serif" font-size="22" font-weight="600">C</text>
+<path d="M450 434 V487" fill="none" stroke="#344759" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="348" y="494" width="204" height="58" fill="#F7F9FB" stroke="#344759" stroke-width="2" rx="7"/>
+<text x="450" y="522" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Georgia, Times New Roman, serif" font-size="23" font-weight="600">U = [S′ ; K′]</text>
+<rect x="48" y="595" width="578" height="649" fill="#FDF9EE" stroke="#B9C0C9" stroke-width="1.8" rx="12"/>
+<text x="337" y="626" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Georgia, Times New Roman, serif" font-size="24" font-weight="600">Multi-scale expert bank</text>
+<text x="337" y="657" text-anchor="middle" dominant-baseline="middle" fill="#526171" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400">Each expert receives the full concatenated input U</text>
+<path d="M348 523 H73 V1151" fill="none" stroke="#344759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M613 759 V1151" fill="none" stroke="#62798E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="94" y="706" width="497" height="100" fill="#E9F2FC" stroke="#587DAE" stroke-width="1.9" rx="9"/>
+<rect x="107" y="725" width="60" height="62" fill="white" stroke="#587DAE" stroke-width="1.6" rx="6"/>
+<text x="137" y="747" text-anchor="middle" dominant-baseline="middle" fill="#587DAE" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">E1</text>
+<text x="137" y="770" text-anchor="middle" dominant-baseline="middle" fill="#587DAE" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">1×1</text>
+<rect x="181" y="731" width="69" height="50" fill="white" stroke="#587DAE" stroke-width="1.1" rx="4"/>
+<text x="215.5" y="751" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">1×1</text>
+<text x="215.5" y="767" text-anchor="middle" dominant-baseline="middle" fill="#526171" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400">Conv</text>
+<path d="M251 756 H259" fill="none" stroke="#587DAE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+<rect x="261" y="731" width="69" height="50" fill="white" stroke="#587DAE" stroke-width="1.1" rx="4"/>
+<text x="295.5" y="751" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">Sync</text>
+<text x="295.5" y="767" text-anchor="middle" dominant-baseline="middle" fill="#526171" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400">BN</text>
+<path d="M331 756 H339" fill="none" stroke="#587DAE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+<rect x="341" y="731" width="69" height="50" fill="white" stroke="#587DAE" stroke-width="1.1" rx="4"/>
+<text x="375.5" y="756" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">GELU</text>
+<path d="M411 756 H419" fill="none" stroke="#587DAE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+<rect x="421" y="731" width="69" height="50" fill="white" stroke="#587DAE" stroke-width="1.1" rx="4"/>
+<text x="455.5" y="751" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">1×1</text>
+<text x="455.5" y="767" text-anchor="middle" dominant-baseline="middle" fill="#526171" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400">GConv</text>
+<path d="M491 756 H499" fill="none" stroke="#587DAE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+<rect x="501" y="731" width="69" height="50" fill="white" stroke="#587DAE" stroke-width="1.1" rx="4"/>
+<text x="535.5" y="756" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">GELU</text>
+<path d="M73 756 H89" fill="none" stroke="#344759" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M591 756 H610" fill="none" stroke="#344759" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="602" y="723" text-anchor="middle" dominant-baseline="middle" fill="#587DAE" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="500">F1</text>
+<rect x="94" y="837" width="497" height="100" fill="#F2ECFA" stroke="#8063B0" stroke-width="1.9" rx="9"/>
+<rect x="107" y="856" width="60" height="62" fill="white" stroke="#8063B0" stroke-width="1.6" rx="6"/>
+<text x="137" y="878" text-anchor="middle" dominant-baseline="middle" fill="#8063B0" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">E2</text>
+<text x="137" y="901" text-anchor="middle" dominant-baseline="middle" fill="#8063B0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">3×3</text>
+<rect x="181" y="862" width="69" height="50" fill="white" stroke="#8063B0" stroke-width="1.1" rx="4"/>
+<text x="215.5" y="882" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">1×1</text>
+<text x="215.5" y="898" text-anchor="middle" dominant-baseline="middle" fill="#526171" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400">Conv</text>
+<path d="M251 887 H259" fill="none" stroke="#8063B0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="261" y="862" width="69" height="50" fill="white" stroke="#8063B0" stroke-width="1.1" rx="4"/>
+<text x="295.5" y="882" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">Sync</text>
+<text x="295.5" y="898" text-anchor="middle" dominant-baseline="middle" fill="#526171" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400">BN</text>
+<path d="M331 887 H339" fill="none" stroke="#8063B0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="341" y="862" width="69" height="50" fill="white" stroke="#8063B0" stroke-width="1.1" rx="4"/>
+<text x="375.5" y="887" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">GELU</text>
+<path d="M411 887 H419" fill="none" stroke="#8063B0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="421" y="862" width="69" height="50" fill="white" stroke="#8063B0" stroke-width="1.1" rx="4"/>
+<text x="455.5" y="882" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">3×3</text>
+<text x="455.5" y="898" text-anchor="middle" dominant-baseline="middle" fill="#526171" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400">GConv</text>
+<path d="M491 887 H499" fill="none" stroke="#8063B0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="501" y="862" width="69" height="50" fill="white" stroke="#8063B0" stroke-width="1.1" rx="4"/>
+<text x="535.5" y="887" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">GELU</text>
+<path d="M73 887 H89" fill="none" stroke="#344759" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M591 887 H610" fill="none" stroke="#344759" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="602" y="854" text-anchor="middle" dominant-baseline="middle" fill="#8063B0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="500">F2</text>
+<rect x="94" y="968" width="497" height="100" fill="#E8F5EE" stroke="#549573" stroke-width="1.9" rx="9"/>
+<rect x="107" y="987" width="60" height="62" fill="white" stroke="#549573" stroke-width="1.6" rx="6"/>
+<text x="137" y="1009" text-anchor="middle" dominant-baseline="middle" fill="#549573" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">E3</text>
+<text x="137" y="1032" text-anchor="middle" dominant-baseline="middle" fill="#549573" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">5×5</text>
+<rect x="181" y="993" width="69" height="50" fill="white" stroke="#549573" stroke-width="1.1" rx="4"/>
+<text x="215.5" y="1013" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">1×1</text>
+<text x="215.5" y="1029" text-anchor="middle" dominant-baseline="middle" fill="#526171" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400">Conv</text>
+<path d="M251 1018 H259" fill="none" stroke="#549573" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="261" y="993" width="69" height="50" fill="white" stroke="#549573" stroke-width="1.1" rx="4"/>
+<text x="295.5" y="1013" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">Sync</text>
+<text x="295.5" y="1029" text-anchor="middle" dominant-baseline="middle" fill="#526171" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400">BN</text>
+<path d="M331 1018 H339" fill="none" stroke="#549573" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="341" y="993" width="69" height="50" fill="white" stroke="#549573" stroke-width="1.1" rx="4"/>
+<text x="375.5" y="1018" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">GELU</text>
+<path d="M411 1018 H419" fill="none" stroke="#549573" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="421" y="993" width="69" height="50" fill="white" stroke="#549573" stroke-width="1.1" rx="4"/>
+<text x="455.5" y="1013" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">5×5</text>
+<text x="455.5" y="1029" text-anchor="middle" dominant-baseline="middle" fill="#526171" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400">GConv</text>
+<path d="M491 1018 H499" fill="none" stroke="#549573" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="501" y="993" width="69" height="50" fill="white" stroke="#549573" stroke-width="1.1" rx="4"/>
+<text x="535.5" y="1018" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">GELU</text>
+<path d="M73 1018 H89" fill="none" stroke="#344759" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M591 1018 H610" fill="none" stroke="#344759" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="602" y="985" text-anchor="middle" dominant-baseline="middle" fill="#549573" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="500">F3</text>
+<rect x="94" y="1099" width="497" height="100" fill="#FFF0E8" stroke="#C77955" stroke-width="1.9" rx="9"/>
+<rect x="107" y="1118" width="60" height="62" fill="white" stroke="#C77955" stroke-width="1.6" rx="6"/>
+<text x="137" y="1140" text-anchor="middle" dominant-baseline="middle" fill="#C77955" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">E4</text>
+<text x="137" y="1163" text-anchor="middle" dominant-baseline="middle" fill="#C77955" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">7×7</text>
+<rect x="181" y="1124" width="69" height="50" fill="white" stroke="#C77955" stroke-width="1.1" rx="4"/>
+<text x="215.5" y="1144" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">1×1</text>
+<text x="215.5" y="1160" text-anchor="middle" dominant-baseline="middle" fill="#526171" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400">Conv</text>
+<path d="M251 1149 H259" fill="none" stroke="#C77955" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="261" y="1124" width="69" height="50" fill="white" stroke="#C77955" stroke-width="1.1" rx="4"/>
+<text x="295.5" y="1144" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">Sync</text>
+<text x="295.5" y="1160" text-anchor="middle" dominant-baseline="middle" fill="#526171" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400">BN</text>
+<path d="M331 1149 H339" fill="none" stroke="#C77955" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="341" y="1124" width="69" height="50" fill="white" stroke="#C77955" stroke-width="1.1" rx="4"/>
+<text x="375.5" y="1149" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">GELU</text>
+<path d="M411 1149 H419" fill="none" stroke="#C77955" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="421" y="1124" width="69" height="50" fill="white" stroke="#C77955" stroke-width="1.1" rx="4"/>
+<text x="455.5" y="1144" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">7×7</text>
+<text x="455.5" y="1160" text-anchor="middle" dominant-baseline="middle" fill="#526171" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400">GConv</text>
+<path d="M491 1149 H499" fill="none" stroke="#C77955" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="501" y="1124" width="69" height="50" fill="white" stroke="#C77955" stroke-width="1.1" rx="4"/>
+<text x="535.5" y="1149" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="600">GELU</text>
+<path d="M73 1149 H89" fill="none" stroke="#344759" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M591 1149 H610" fill="none" stroke="#344759" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="602" y="1116" text-anchor="middle" dominant-baseline="middle" fill="#C77955" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="500">F4</text>
+<rect x="661" y="595" width="190" height="514" fill="#F3F5F8" stroke="#B9C0C9" stroke-width="1.8" rx="12"/>
+<text x="756" y="626" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Georgia, Times New Roman, serif" font-size="23" font-weight="600">Co-Mapper</text>
+<text x="756" y="655" text-anchor="middle" dominant-baseline="middle" fill="#526171" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400">pixel-wise scale gates</text>
+<path d="M552 523 H638 V685 H756 V704" fill="none" stroke="#344759" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="689" y="710" width="134" height="59" fill="white" stroke="#344759" stroke-width="1.5" rx="5"/>
+<text x="756" y="740" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="500">1×1 Conv</text>
+<path d="M756 769 V798" fill="none" stroke="#344759" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="689" y="804" width="134" height="59" fill="white" stroke="#344759" stroke-width="1.5" rx="5"/>
+<text x="756" y="834" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="500">ReLU</text>
+<path d="M756 863 V892" fill="none" stroke="#344759" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="689" y="898" width="134" height="59" fill="white" stroke="#344759" stroke-width="1.5" rx="5"/>
+<text x="756" y="928" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="500">1×1 Conv</text>
+<path d="M756 957 V986" fill="none" stroke="#344759" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="689" y="992" width="134" height="59" fill="white" stroke="#344759" stroke-width="1.5" rx="5"/>
+<text x="756" y="1022" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="500">Softmax</text>
+<path d="M756 1051 V1130" fill="none" stroke="#344759" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="756" y="1164" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Georgia, Times New Roman, serif" font-size="22" font-weight="500">g₁, g₂, g₃, g₄</text>
+<text x="756" y="1195" text-anchor="middle" dominant-baseline="middle" fill="#526171" font-family="Georgia, Times New Roman, serif" font-size="17" font-weight="400">Σᵢ gᵢ = 1</text>
+<path d="M613 1151 V1270 H357 V1308" fill="none" stroke="#344759" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M756 1212 V1270 H545 V1308" fill="none" stroke="#344759" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="337" y="1221" text-anchor="middle" dominant-baseline="middle" fill="#526171" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400">F = {F₁, F₂, F₃, F₄}   ·   GConv: groups = C</text>
+<rect x="270" y="1315" width="354" height="89" fill="#F5F8FA" stroke="#344759" stroke-width="2" rx="9"/>
+<text x="447" y="1345" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Georgia, Times New Roman, serif" font-size="23" font-weight="600">Adaptive integration</text>
+<text x="447" y="1381" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Georgia, Times New Roman, serif" font-size="22" font-weight="500">M = Σᵢ gᵢ(U) ⊙ Fᵢ(U)</text>
+<path d="M552 523 H872 V1358 H839" fill="none" stroke="#344759" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="690" y="1315" width="149" height="89" fill="#FDF9EE" stroke="#344759" stroke-width="1.8" rx="9"/>
+<text x="764" y="1343" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="500">1×1 Conv</text>
+<text x="764" y="1380" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="500">ρ · R(U)</text>
+<path d="M447 1404 V1463 H560" fill="none" stroke="#344759" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M764 1404 V1463 H614" fill="none" stroke="#344759" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<circle cx="587" cy="1463" r="27" fill="white" stroke="#344759" stroke-width="2.2"/>
+<text x="587" y="1463" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Georgia, Times New Roman, serif" font-size="35" font-weight="400">+</text>
+<path d="M587 1490 V1530" fill="none" stroke="#344759" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="335" y="1536" width="504" height="47" fill="white" stroke="#1E2A36" stroke-width="2.1" rx="7"/>
+<text x="587" y="1559" text-anchor="middle" dominant-baseline="middle" fill="#1E2A36" font-family="Georgia, Times New Roman, serif" font-size="20" font-weight="500">Fused feature  Y   [B, C, T, H, W]</text>
+</svg>

@@ -1,0 +1,29 @@
+{
+  "image": "/mnt/data6/yc/datasets/OVSISBenchDataset/DLRSD/imgs/Airplane78.jpg",
+  "original_size": [
+    256,
+    256
+  ],
+  "weights": "/mnt/data6/yc/open-vocab/PCA-Seg-Remote/pretrained/RemoteCLIP-ViT-B-32.pt",
+  "teacher_sha256": "60014e395d930a3f2963d1d89c8522bf4ad56775571e4356e866864789af85c4",
+  "segmentation_checkpoint_context": "/mnt/data6/yc/open-vocab/PCA-Seg-Remote/output/eva_vitb_384_dlrsd_attr64_dual_teacher_rskt_protocol_4gpu_bs2/model_0054999.pth",
+  "input_resolution": [
+    896,
+    896
+  ],
+  "patch_size": 32,
+  "native_feature_grid": [
+    28,
+    28
+  ],
+  "feature_shape": [
+    1,
+    784,
+    512
+  ],
+  "method": "Standard visual forward; final patch tokens excluding CLS, ln_post then projection. Same frozen teacher and PC1 method as original visualization.",
+  "positional_embedding": "Existing rescale_positional_embedding: bicubic 7x7 -> target grid, CLS unchanged.",
+  "normalization": "Patch L2 normalization, spatial centering, PCA, sign fixed by largest loading; per-component P02-P98 clipping to [0,1].",
+  "pc1_explained_variance": 0.17078334093093872,
+  "note": "Features recomputed at higher input resolution; source image itself is 256x256. Finer feature sampling does not add original image detail."
+}

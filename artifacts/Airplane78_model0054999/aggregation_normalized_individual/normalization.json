@@ -1,0 +1,1233 @@
+{
+  "source_checkpoint": "/mnt/data6/yc/open-vocab/PCA-Seg-Remote/output/eva_vitb_384_dlrsd_attr64_dual_teacher_rskt_protocol_4gpu_bs2/model_0054999.pth",
+  "checkpoint_sha256": "94915018be9a22f465e33dae94343cc03a91d738f01136a4843cf4d23982d29f",
+  "source_features": "/mnt/data6/yc/open-vocab/PCA-Seg-Remote/artifacts/Airplane78_model0054999/raw_features.npz",
+  "normalization": "Per stage and per class: clip((channel_RMS - P02)/(P98-P02), 0, 1)**1.5; constant maps become zero.",
+  "overlay": "35% original RGB + 65% TURBO heatmap",
+  "records": [
+    {
+      "stage": "layer1_spatial_first",
+      "class_id": 0,
+      "class": "airplane",
+      "p02": 0.9370136857032776,
+      "p98": 0.9667213261127472,
+      "raw_min": 0.9338569641113281,
+      "raw_max": 0.9687677621841431
+    },
+    {
+      "stage": "layer1_spatial_first",
+      "class_id": 1,
+      "class": "bare soil",
+      "p02": 0.9186387360095978,
+      "p98": 0.9557358026504517,
+      "raw_min": 0.9114900231361389,
+      "raw_max": 0.9609186053276062
+    },
+    {
+      "stage": "layer1_spatial_first",
+      "class_id": 2,
+      "class": "buildings",
+      "p02": 0.9238632619380951,
+      "p98": 0.9448099732398987,
+      "raw_min": 0.9219794869422913,
+      "raw_max": 0.9456343650817871
+    },
+    {
+      "stage": "layer1_spatial_first",
+      "class_id": 3,
+      "class": "cars",
+      "p02": 0.9408081471920013,
+      "p98": 0.9595051109790802,
+      "raw_min": 0.9384382963180542,
+      "raw_max": 0.9611660242080688
+    },
+    {
+      "stage": "layer1_spatial_first",
+      "class_id": 4,
+      "class": "chaparral",
+      "p02": 0.9237788617610931,
+      "p98": 0.953788548707962,
+      "raw_min": 0.9178323745727539,
+      "raw_max": 0.95600426197052
+    },
+    {
+      "stage": "layer1_spatial_first",
+      "class_id": 5,
+      "class": "court",
+      "p02": 0.9282919466495514,
+      "p98": 0.9477384984493256,
+      "raw_min": 0.9238677024841309,
+      "raw_max": 0.9496729373931885
+    },
+    {
+      "stage": "layer1_spatial_first",
+      "class_id": 6,
+      "class": "dock",
+      "p02": 0.9288870692253113,
+      "p98": 0.9490812122821808,
+      "raw_min": 0.9259966015815735,
+      "raw_max": 0.9500250816345215
+    },
+    {
+      "stage": "layer1_spatial_first",
+      "class_id": 7,
+      "class": "field",
+      "p02": 0.9243306815624237,
+      "p98": 0.939687967300415,
+      "raw_min": 0.9176781177520752,
+      "raw_max": 0.9413425326347351
+    },
+    {
+      "stage": "layer1_spatial_first",
+      "class_id": 8,
+      "class": "grass",
+      "p02": 0.9108458459377289,
+      "p98": 0.947894275188446,
+      "raw_min": 0.9048933982849121,
+      "raw_max": 0.952246904373169
+    },
+    {
+      "stage": "layer1_spatial_first",
+      "class_id": 9,
+      "class": "mobile home",
+      "p02": 0.9282186329364777,
+      "p98": 0.9491823315620422,
+      "raw_min": 0.92548006772995,
+      "raw_max": 0.9513741135597229
+    },
+    {
+      "stage": "layer1_spatial_first",
+      "class_id": 10,
+      "class": "pavement",
+      "p02": 0.9342435300350189,
+      "p98": 0.9682671129703522,
+      "raw_min": 0.9222844839096069,
+      "raw_max": 0.973072350025177
+    },
+    {
+      "stage": "layer1_spatial_first",
+      "class_id": 11,
+      "class": "sand",
+      "p02": 0.8700411915779114,
+      "p98": 0.9278178811073303,
+      "raw_min": 0.8641747236251831,
+      "raw_max": 0.9334588050842285
+    },
+    {
+      "stage": "layer1_spatial_first",
+      "class_id": 12,
+      "class": "sea",
+      "p02": 0.9300370812416077,
+      "p98": 0.9558389186859131,
+      "raw_min": 0.9225276708602905,
+      "raw_max": 0.9595617651939392
+    },
+    {
+      "stage": "layer1_spatial_first",
+      "class_id": 13,
+      "class": "ship",
+      "p02": 0.9367413520812988,
+      "p98": 0.954045295715332,
+      "raw_min": 0.9354574084281921,
+      "raw_max": 0.9551700353622437
+    },
+    {
+      "stage": "layer1_spatial_first",
+      "class_id": 14,
+      "class": "tanks",
+      "p02": 0.9262425303459167,
+      "p98": 0.9430092573165894,
+      "raw_min": 0.9222869873046875,
+      "raw_max": 0.9446441531181335
+    },
+    {
+      "stage": "layer1_spatial_first",
+      "class_id": 15,
+      "class": "trees",
+      "p02": 0.9041327834129333,
+      "p98": 0.9154971539974213,
+      "raw_min": 0.9028995633125305,
+      "raw_max": 0.9179903864860535
+    },
+    {
+      "stage": "layer1_spatial_first",
+      "class_id": 16,
+      "class": "water",
+      "p02": 0.9351255297660828,
+      "p98": 0.9520780444145203,
+      "raw_min": 0.9325491189956665,
+      "raw_max": 0.9543105959892273
+    },
+    {
+      "stage": "layer1_class_first",
+      "class_id": 0,
+      "class": "airplane",
+      "p02": 1.024023950099945,
+      "p98": 1.0784409046173096,
+      "raw_min": 1.0163688659667969,
+      "raw_max": 1.0841540098190308
+    },
+    {
+      "stage": "layer1_class_first",
+      "class_id": 1,
+      "class": "bare soil",
+      "p02": 1.0201283693313599,
+      "p98": 1.0584478378295898,
+      "raw_min": 1.0147322416305542,
+      "raw_max": 1.0641905069351196
+    },
+    {
+      "stage": "layer1_class_first",
+      "class_id": 2,
+      "class": "buildings",
+      "p02": 1.0129074454307556,
+      "p98": 1.032043695449829,
+      "raw_min": 1.0084410905838013,
+      "raw_max": 1.0360323190689087
+    },
+    {
+      "stage": "layer1_class_first",
+      "class_id": 3,
+      "class": "cars",
+      "p02": 1.0172305703163147,
+      "p98": 1.0385862588882446,
+      "raw_min": 1.0119457244873047,
+      "raw_max": 1.0425678491592407
+    },
+    {
+      "stage": "layer1_class_first",
+      "class_id": 4,
+      "class": "chaparral",
+      "p02": 1.0214579701423645,
+      "p98": 1.0476279854774475,
+      "raw_min": 1.0170406103134155,
+      "raw_max": 1.0563902854919434
+    },
+    {
+      "stage": "layer1_class_first",
+      "class_id": 5,
+      "class": "court",
+      "p02": 1.0177146196365356,
+      "p98": 1.03603595495224,
+      "raw_min": 1.0129529237747192,
+      "raw_max": 1.0392646789550781
+    },
+    {
+      "stage": "layer1_class_first",
+      "class_id": 6,
+      "class": "dock",
+      "p02": 1.016779899597168,
+      "p98": 1.0367111563682556,
+      "raw_min": 1.0145626068115234,
+      "raw_max": 1.0452173948287964
+    },
+    {
+      "stage": "layer1_class_first",
+      "class_id": 7,
+      "class": "field",
+      "p02": 1.0166099071502686,
+      "p98": 1.0347729325294495,
+      "raw_min": 1.0137172937393188,
+      "raw_max": 1.0426650047302246
+    },
+    {
+      "stage": "layer1_class_first",
+      "class_id": 8,
+      "class": "grass",
+      "p02": 1.0187808871269226,
+      "p98": 1.057244896888733,
+      "raw_min": 1.0155022144317627,
+      "raw_max": 1.0616568326950073
+    },
+    {
+      "stage": "layer1_class_first",
+      "class_id": 9,
+      "class": "mobile home",
+      "p02": 1.0179460048675537,
+      "p98": 1.0388689637184143,
+      "raw_min": 1.0146472454071045,
+      "raw_max": 1.0410245656967163
+    },
+    {
+      "stage": "layer1_class_first",
+      "class_id": 10,
+      "class": "pavement",
+      "p02": 1.028326153755188,
+      "p98": 1.1154342293739319,
+      "raw_min": 1.0187541246414185,
+      "raw_max": 1.1194816827774048
+    },
+    {
+      "stage": "layer1_class_first",
+      "class_id": 11,
+      "class": "sand",
+      "p02": 1.0150269269943237,
+      "p98": 1.093028962612152,
+      "raw_min": 1.0127463340759277,
+      "raw_max": 1.1035293340682983
+    },
+    {
+      "stage": "layer1_class_first",
+      "class_id": 12,
+      "class": "sea",
+      "p02": 1.021730124950409,
+      "p98": 1.0473094582557678,
+      "raw_min": 1.0195525884628296,
+      "raw_max": 1.0553826093673706
+    },
+    {
+      "stage": "layer1_class_first",
+      "class_id": 13,
+      "class": "ship",
+      "p02": 1.0178836584091187,
+      "p98": 1.037044644355774,
+      "raw_min": 1.0145704746246338,
+      "raw_max": 1.0402569770812988
+    },
+    {
+      "stage": "layer1_class_first",
+      "class_id": 14,
+      "class": "tanks",
+      "p02": 1.0152865052223206,
+      "p98": 1.031987488269806,
+      "raw_min": 1.0107734203338623,
+      "raw_max": 1.038017749786377
+    },
+    {
+      "stage": "layer1_class_first",
+      "class_id": 15,
+      "class": "trees",
+      "p02": 1.012450635433197,
+      "p98": 1.0324002504348755,
+      "raw_min": 1.0096081495285034,
+      "raw_max": 1.040467619895935
+    },
+    {
+      "stage": "layer1_class_first",
+      "class_id": 16,
+      "class": "water",
+      "p02": 1.0192729234695435,
+      "p98": 1.0372390151023865,
+      "raw_min": 1.0171259641647339,
+      "raw_max": 1.0450209379196167
+    },
+    {
+      "stage": "layer1_spatial_second",
+      "class_id": 0,
+      "class": "airplane",
+      "p02": 0.5014062225818634,
+      "p98": 0.5802823305130005,
+      "raw_min": 0.49112746119499207,
+      "raw_max": 0.5863127708435059
+    },
+    {
+      "stage": "layer1_spatial_second",
+      "class_id": 1,
+      "class": "bare soil",
+      "p02": 0.49756690859794617,
+      "p98": 0.5399965941905975,
+      "raw_min": 0.48893728852272034,
+      "raw_max": 0.5481349229812622
+    },
+    {
+      "stage": "layer1_spatial_second",
+      "class_id": 2,
+      "class": "buildings",
+      "p02": 0.5080093145370483,
+      "p98": 0.5286736786365509,
+      "raw_min": 0.5038463473320007,
+      "raw_max": 0.5347661375999451
+    },
+    {
+      "stage": "layer1_spatial_second",
+      "class_id": 3,
+      "class": "cars",
+      "p02": 0.516875296831131,
+      "p98": 0.5492296814918518,
+      "raw_min": 0.5108644962310791,
+      "raw_max": 0.5550955533981323
+    },
+    {
+      "stage": "layer1_spatial_second",
+      "class_id": 4,
+      "class": "chaparral",
+      "p02": 0.5059778094291687,
+      "p98": 0.5326671600341797,
+      "raw_min": 0.5011586546897888,
+      "raw_max": 0.5378844141960144
+    },
+    {
+      "stage": "layer1_spatial_second",
+      "class_id": 5,
+      "class": "court",
+      "p02": 0.5070882141590118,
+      "p98": 0.5261954069137573,
+      "raw_min": 0.500689685344696,
+      "raw_max": 0.5305045247077942
+    },
+    {
+      "stage": "layer1_spatial_second",
+      "class_id": 6,
+      "class": "dock",
+      "p02": 0.5063246786594391,
+      "p98": 0.5224823951721191,
+      "raw_min": 0.49860355257987976,
+      "raw_max": 0.52964848279953
+    },
+    {
+      "stage": "layer1_spatial_second",
+      "class_id": 7,
+      "class": "field",
+      "p02": 0.5058629214763641,
+      "p98": 0.52482870221138,
+      "raw_min": 0.5010684728622437,
+      "raw_max": 0.5265446305274963
+    },
+    {
+      "stage": "layer1_spatial_second",
+      "class_id": 8,
+      "class": "grass",
+      "p02": 0.5084545016288757,
+      "p98": 0.5598456263542175,
+      "raw_min": 0.5038227438926697,
+      "raw_max": 0.5702275633811951
+    },
+    {
+      "stage": "layer1_spatial_second",
+      "class_id": 9,
+      "class": "mobile home",
+      "p02": 0.5084829926490784,
+      "p98": 0.5322341620922089,
+      "raw_min": 0.5007876753807068,
+      "raw_max": 0.5369020104408264
+    },
+    {
+      "stage": "layer1_spatial_second",
+      "class_id": 10,
+      "class": "pavement",
+      "p02": 0.49310170114040375,
+      "p98": 0.6005227863788605,
+      "raw_min": 0.4635671079158783,
+      "raw_max": 0.6211940050125122
+    },
+    {
+      "stage": "layer1_spatial_second",
+      "class_id": 11,
+      "class": "sand",
+      "p02": 0.5066389739513397,
+      "p98": 0.5786449909210205,
+      "raw_min": 0.49957892298698425,
+      "raw_max": 0.5972804427146912
+    },
+    {
+      "stage": "layer1_spatial_second",
+      "class_id": 12,
+      "class": "sea",
+      "p02": 0.5077373087406158,
+      "p98": 0.5339554846286774,
+      "raw_min": 0.5027996301651001,
+      "raw_max": 0.5365228056907654
+    },
+    {
+      "stage": "layer1_spatial_second",
+      "class_id": 13,
+      "class": "ship",
+      "p02": 0.5144654810428619,
+      "p98": 0.5377642512321472,
+      "raw_min": 0.5089190602302551,
+      "raw_max": 0.5436516404151917
+    },
+    {
+      "stage": "layer1_spatial_second",
+      "class_id": 14,
+      "class": "tanks",
+      "p02": 0.5022265315055847,
+      "p98": 0.522406667470932,
+      "raw_min": 0.49806714057922363,
+      "raw_max": 0.5248103141784668
+    },
+    {
+      "stage": "layer1_spatial_second",
+      "class_id": 15,
+      "class": "trees",
+      "p02": 0.5007418692111969,
+      "p98": 0.5187439024448395,
+      "raw_min": 0.49815744161605835,
+      "raw_max": 0.5244017839431763
+    },
+    {
+      "stage": "layer1_spatial_second",
+      "class_id": 16,
+      "class": "water",
+      "p02": 0.5088879466056824,
+      "p98": 0.5272121131420135,
+      "raw_min": 0.5067125558853149,
+      "raw_max": 0.530333936214447
+    },
+    {
+      "stage": "layer1_class_second",
+      "class_id": 0,
+      "class": "airplane",
+      "p02": 0.7899197340011597,
+      "p98": 0.8612042665481567,
+      "raw_min": 0.7740038633346558,
+      "raw_max": 0.8732186555862427
+    },
+    {
+      "stage": "layer1_class_second",
+      "class_id": 1,
+      "class": "bare soil",
+      "p02": 0.7901141345500946,
+      "p98": 0.86532923579216,
+      "raw_min": 0.7655208706855774,
+      "raw_max": 0.8888411521911621
+    },
+    {
+      "stage": "layer1_class_second",
+      "class_id": 2,
+      "class": "buildings",
+      "p02": 0.8246624767780304,
+      "p98": 0.8709075152873993,
+      "raw_min": 0.8137850165367126,
+      "raw_max": 0.8823877573013306
+    },
+    {
+      "stage": "layer1_class_second",
+      "class_id": 3,
+      "class": "cars",
+      "p02": 0.8278498947620392,
+      "p98": 0.8684059083461761,
+      "raw_min": 0.8210370540618896,
+      "raw_max": 0.8824477195739746
+    },
+    {
+      "stage": "layer1_class_second",
+      "class_id": 4,
+      "class": "chaparral",
+      "p02": 0.8054491579532623,
+      "p98": 0.8591270744800568,
+      "raw_min": 0.7873595952987671,
+      "raw_max": 0.867401123046875
+    },
+    {
+      "stage": "layer1_class_second",
+      "class_id": 5,
+      "class": "court",
+      "p02": 0.82906773686409,
+      "p98": 0.8731449842453003,
+      "raw_min": 0.8189566731452942,
+      "raw_max": 0.8840157985687256
+    },
+    {
+      "stage": "layer1_class_second",
+      "class_id": 6,
+      "class": "dock",
+      "p02": 0.8349409997463226,
+      "p98": 0.8644336462020874,
+      "raw_min": 0.8268101215362549,
+      "raw_max": 0.8733786344528198
+    },
+    {
+      "stage": "layer1_class_second",
+      "class_id": 7,
+      "class": "field",
+      "p02": 0.8299459517002106,
+      "p98": 0.8620286583900452,
+      "raw_min": 0.8245680928230286,
+      "raw_max": 0.8730541467666626
+    },
+    {
+      "stage": "layer1_class_second",
+      "class_id": 8,
+      "class": "grass",
+      "p02": 0.7728986144065857,
+      "p98": 0.8488810360431671,
+      "raw_min": 0.7494403123855591,
+      "raw_max": 0.8692487478256226
+    },
+    {
+      "stage": "layer1_class_second",
+      "class_id": 9,
+      "class": "mobile home",
+      "p02": 0.8227786719799042,
+      "p98": 0.8695547878742218,
+      "raw_min": 0.8101059198379517,
+      "raw_max": 0.8775430917739868
+    },
+    {
+      "stage": "layer1_class_second",
+      "class_id": 10,
+      "class": "pavement",
+      "p02": 0.7809200882911682,
+      "p98": 0.9019421339035034,
+      "raw_min": 0.7597081065177917,
+      "raw_max": 0.9299522638320923
+    },
+    {
+      "stage": "layer1_class_second",
+      "class_id": 11,
+      "class": "sand",
+      "p02": 0.7604719698429108,
+      "p98": 0.8657447993755341,
+      "raw_min": 0.7444836497306824,
+      "raw_max": 0.8999125957489014
+    },
+    {
+      "stage": "layer1_class_second",
+      "class_id": 12,
+      "class": "sea",
+      "p02": 0.8120383620262146,
+      "p98": 0.8590334951877594,
+      "raw_min": 0.7939095497131348,
+      "raw_max": 0.863856315612793
+    },
+    {
+      "stage": "layer1_class_second",
+      "class_id": 13,
+      "class": "ship",
+      "p02": 0.8276523351669312,
+      "p98": 0.8640688955783844,
+      "raw_min": 0.8172829151153564,
+      "raw_max": 0.8703166246414185
+    },
+    {
+      "stage": "layer1_class_second",
+      "class_id": 14,
+      "class": "tanks",
+      "p02": 0.8304867446422577,
+      "p98": 0.8663367331027985,
+      "raw_min": 0.8246815800666809,
+      "raw_max": 0.8769200444221497
+    },
+    {
+      "stage": "layer1_class_second",
+      "class_id": 15,
+      "class": "trees",
+      "p02": 0.8272650837898254,
+      "p98": 0.8671947121620178,
+      "raw_min": 0.8241251707077026,
+      "raw_max": 0.877861738204956
+    },
+    {
+      "stage": "layer1_class_second",
+      "class_id": 16,
+      "class": "water",
+      "p02": 0.8307965993881226,
+      "p98": 0.8599221110343933,
+      "raw_min": 0.8261935114860535,
+      "raw_max": 0.8659842014312744
+    },
+    {
+      "stage": "layer2_spatial_first",
+      "class_id": 0,
+      "class": "airplane",
+      "p02": 0.37643325328826904,
+      "p98": 0.502374529838562,
+      "raw_min": 0.3627581298351288,
+      "raw_max": 0.5784562826156616
+    },
+    {
+      "stage": "layer2_spatial_first",
+      "class_id": 1,
+      "class": "bare soil",
+      "p02": 0.403801366686821,
+      "p98": 0.476469025015831,
+      "raw_min": 0.3874816298484802,
+      "raw_max": 0.5045762658119202
+    },
+    {
+      "stage": "layer2_spatial_first",
+      "class_id": 2,
+      "class": "buildings",
+      "p02": 0.39481979608535767,
+      "p98": 0.42258433997631073,
+      "raw_min": 0.38056814670562744,
+      "raw_max": 0.4269847869873047
+    },
+    {
+      "stage": "layer2_spatial_first",
+      "class_id": 3,
+      "class": "cars",
+      "p02": 0.3635414391756058,
+      "p98": 0.4195992946624756,
+      "raw_min": 0.35592105984687805,
+      "raw_max": 0.4325355589389801
+    },
+    {
+      "stage": "layer2_spatial_first",
+      "class_id": 4,
+      "class": "chaparral",
+      "p02": 0.35831137001514435,
+      "p98": 0.4060196876525879,
+      "raw_min": 0.3539532423019409,
+      "raw_max": 0.4234020411968231
+    },
+    {
+      "stage": "layer2_spatial_first",
+      "class_id": 5,
+      "class": "court",
+      "p02": 0.3598678708076477,
+      "p98": 0.40273870527744293,
+      "raw_min": 0.35529595613479614,
+      "raw_max": 0.4071492850780487
+    },
+    {
+      "stage": "layer2_spatial_first",
+      "class_id": 6,
+      "class": "dock",
+      "p02": 0.36548884212970734,
+      "p98": 0.39892613887786865,
+      "raw_min": 0.3609545826911926,
+      "raw_max": 0.4029735028743744
+    },
+    {
+      "stage": "layer2_spatial_first",
+      "class_id": 7,
+      "class": "field",
+      "p02": 0.3663260340690613,
+      "p98": 0.39082588255405426,
+      "raw_min": 0.36202600598335266,
+      "raw_max": 0.39704787731170654
+    },
+    {
+      "stage": "layer2_spatial_first",
+      "class_id": 8,
+      "class": "grass",
+      "p02": 0.3471778333187103,
+      "p98": 0.42475754022598267,
+      "raw_min": 0.3363378047943115,
+      "raw_max": 0.43077552318573
+    },
+    {
+      "stage": "layer2_spatial_first",
+      "class_id": 9,
+      "class": "mobile home",
+      "p02": 0.36485302448272705,
+      "p98": 0.41029587388038635,
+      "raw_min": 0.3598792254924774,
+      "raw_max": 0.4161530137062073
+    },
+    {
+      "stage": "layer2_spatial_first",
+      "class_id": 10,
+      "class": "pavement",
+      "p02": 0.38886164128780365,
+      "p98": 0.588755339384079,
+      "raw_min": 0.3762805163860321,
+      "raw_max": 0.6388177275657654
+    },
+    {
+      "stage": "layer2_spatial_first",
+      "class_id": 11,
+      "class": "sand",
+      "p02": 0.38303571939468384,
+      "p98": 0.4934685677289963,
+      "raw_min": 0.3739241361618042,
+      "raw_max": 0.5261455774307251
+    },
+    {
+      "stage": "layer2_spatial_first",
+      "class_id": 12,
+      "class": "sea",
+      "p02": 0.35959289968013763,
+      "p98": 0.39545248448848724,
+      "raw_min": 0.34918415546417236,
+      "raw_max": 0.40130966901779175
+    },
+    {
+      "stage": "layer2_spatial_first",
+      "class_id": 13,
+      "class": "ship",
+      "p02": 0.3784530609846115,
+      "p98": 0.41262248158454895,
+      "raw_min": 0.37260282039642334,
+      "raw_max": 0.41992825269699097
+    },
+    {
+      "stage": "layer2_spatial_first",
+      "class_id": 14,
+      "class": "tanks",
+      "p02": 0.35849475860595703,
+      "p98": 0.3838546723127365,
+      "raw_min": 0.3523072302341461,
+      "raw_max": 0.38647112250328064
+    },
+    {
+      "stage": "layer2_spatial_first",
+      "class_id": 15,
+      "class": "trees",
+      "p02": 0.3872792422771454,
+      "p98": 0.4157627522945404,
+      "raw_min": 0.38176003098487854,
+      "raw_max": 0.42093127965927124
+    },
+    {
+      "stage": "layer2_spatial_first",
+      "class_id": 16,
+      "class": "water",
+      "p02": 0.3513821214437485,
+      "p98": 0.3882691562175751,
+      "raw_min": 0.3468310236930847,
+      "raw_max": 0.39286741614341736
+    },
+    {
+      "stage": "layer2_class_first",
+      "class_id": 0,
+      "class": "airplane",
+      "p02": 0.5713447332382202,
+      "p98": 0.8167246878147125,
+      "raw_min": 0.5443013906478882,
+      "raw_max": 0.8397307395935059
+    },
+    {
+      "stage": "layer2_class_first",
+      "class_id": 1,
+      "class": "bare soil",
+      "p02": 0.6175523698329926,
+      "p98": 0.7376574873924255,
+      "raw_min": 0.6063688397407532,
+      "raw_max": 0.7565075159072876
+    },
+    {
+      "stage": "layer2_class_first",
+      "class_id": 2,
+      "class": "buildings",
+      "p02": 0.6124188601970673,
+      "p98": 0.7119653820991516,
+      "raw_min": 0.6059445142745972,
+      "raw_max": 0.7291469573974609
+    },
+    {
+      "stage": "layer2_class_first",
+      "class_id": 3,
+      "class": "cars",
+      "p02": 0.5941969156265259,
+      "p98": 0.7385041117668152,
+      "raw_min": 0.5803571343421936,
+      "raw_max": 0.7574164271354675
+    },
+    {
+      "stage": "layer2_class_first",
+      "class_id": 4,
+      "class": "chaparral",
+      "p02": 0.6087812185287476,
+      "p98": 0.6977911591529846,
+      "raw_min": 0.5875492691993713,
+      "raw_max": 0.7076509594917297
+    },
+    {
+      "stage": "layer2_class_first",
+      "class_id": 5,
+      "class": "court",
+      "p02": 0.6251786649227142,
+      "p98": 0.7081887125968933,
+      "raw_min": 0.6161901950836182,
+      "raw_max": 0.7220770120620728
+    },
+    {
+      "stage": "layer2_class_first",
+      "class_id": 6,
+      "class": "dock",
+      "p02": 0.6184854209423065,
+      "p98": 0.6867722272872925,
+      "raw_min": 0.6105617880821228,
+      "raw_max": 0.7006391882896423
+    },
+    {
+      "stage": "layer2_class_first",
+      "class_id": 7,
+      "class": "field",
+      "p02": 0.6162253320217133,
+      "p98": 0.6873091459274292,
+      "raw_min": 0.6108678579330444,
+      "raw_max": 0.7034047245979309
+    },
+    {
+      "stage": "layer2_class_first",
+      "class_id": 8,
+      "class": "grass",
+      "p02": 0.5719559788703918,
+      "p98": 0.7036249935626984,
+      "raw_min": 0.538895845413208,
+      "raw_max": 0.7531431913375854
+    },
+    {
+      "stage": "layer2_class_first",
+      "class_id": 9,
+      "class": "mobile home",
+      "p02": 0.6226622760295868,
+      "p98": 0.7037439048290253,
+      "raw_min": 0.6135037541389465,
+      "raw_max": 0.72054523229599
+    },
+    {
+      "stage": "layer2_class_first",
+      "class_id": 10,
+      "class": "pavement",
+      "p02": 0.5799943506717682,
+      "p98": 0.7660887837409973,
+      "raw_min": 0.5575988292694092,
+      "raw_max": 0.7797404527664185
+    },
+    {
+      "stage": "layer2_class_first",
+      "class_id": 11,
+      "class": "sand",
+      "p02": 0.6047215461730957,
+      "p98": 0.8240348994731903,
+      "raw_min": 0.5896118879318237,
+      "raw_max": 0.8611725568771362
+    },
+    {
+      "stage": "layer2_class_first",
+      "class_id": 12,
+      "class": "sea",
+      "p02": 0.6108967661857605,
+      "p98": 0.6966305375099182,
+      "raw_min": 0.585861086845398,
+      "raw_max": 0.709132969379425
+    },
+    {
+      "stage": "layer2_class_first",
+      "class_id": 13,
+      "class": "ship",
+      "p02": 0.6091230809688568,
+      "p98": 0.731163740158081,
+      "raw_min": 0.6015068888664246,
+      "raw_max": 0.7474510073661804
+    },
+    {
+      "stage": "layer2_class_first",
+      "class_id": 14,
+      "class": "tanks",
+      "p02": 0.6215782165527344,
+      "p98": 0.6898800432682037,
+      "raw_min": 0.6159342527389526,
+      "raw_max": 0.7002484798431396
+    },
+    {
+      "stage": "layer2_class_first",
+      "class_id": 15,
+      "class": "trees",
+      "p02": 0.6006441712379456,
+      "p98": 0.6853207349777222,
+      "raw_min": 0.593163251876831,
+      "raw_max": 0.7041116952896118
+    },
+    {
+      "stage": "layer2_class_first",
+      "class_id": 16,
+      "class": "water",
+      "p02": 0.6221875548362732,
+      "p98": 0.6933358311653137,
+      "raw_min": 0.614587664604187,
+      "raw_max": 0.7067380547523499
+    },
+    {
+      "stage": "layer2_spatial_second",
+      "class_id": 0,
+      "class": "airplane",
+      "p02": 0.4160046726465225,
+      "p98": 0.5265259742736816,
+      "raw_min": 0.4037414789199829,
+      "raw_max": 0.5879557132720947
+    },
+    {
+      "stage": "layer2_spatial_second",
+      "class_id": 1,
+      "class": "bare soil",
+      "p02": 0.40277567505836487,
+      "p98": 0.4838097095489502,
+      "raw_min": 0.3935663402080536,
+      "raw_max": 0.49091455340385437
+    },
+    {
+      "stage": "layer2_spatial_second",
+      "class_id": 2,
+      "class": "buildings",
+      "p02": 0.36922866106033325,
+      "p98": 0.4396090656518936,
+      "raw_min": 0.3624459505081177,
+      "raw_max": 0.4495921730995178
+    },
+    {
+      "stage": "layer2_spatial_second",
+      "class_id": 3,
+      "class": "cars",
+      "p02": 0.3742891252040863,
+      "p98": 0.4476916640996933,
+      "raw_min": 0.354561984539032,
+      "raw_max": 0.46211478114128113
+    },
+    {
+      "stage": "layer2_spatial_second",
+      "class_id": 4,
+      "class": "chaparral",
+      "p02": 0.3584683984518051,
+      "p98": 0.43317340314388275,
+      "raw_min": 0.3445143401622772,
+      "raw_max": 0.4484875202178955
+    },
+    {
+      "stage": "layer2_spatial_second",
+      "class_id": 5,
+      "class": "court",
+      "p02": 0.35993988811969757,
+      "p98": 0.4121403098106384,
+      "raw_min": 0.3510857820510864,
+      "raw_max": 0.42282968759536743
+    },
+    {
+      "stage": "layer2_spatial_second",
+      "class_id": 6,
+      "class": "dock",
+      "p02": 0.3442280888557434,
+      "p98": 0.40549175441265106,
+      "raw_min": 0.3283039331436157,
+      "raw_max": 0.42119160294532776
+    },
+    {
+      "stage": "layer2_spatial_second",
+      "class_id": 7,
+      "class": "field",
+      "p02": 0.3621010333299637,
+      "p98": 0.40214474499225616,
+      "raw_min": 0.3563992381095886,
+      "raw_max": 0.4087721109390259
+    },
+    {
+      "stage": "layer2_spatial_second",
+      "class_id": 8,
+      "class": "grass",
+      "p02": 0.38500364124774933,
+      "p98": 0.5814251601696014,
+      "raw_min": 0.3681963384151459,
+      "raw_max": 0.6144292950630188
+    },
+    {
+      "stage": "layer2_spatial_second",
+      "class_id": 9,
+      "class": "mobile home",
+      "p02": 0.3666827529668808,
+      "p98": 0.4196789860725403,
+      "raw_min": 0.3555759787559509,
+      "raw_max": 0.43423813581466675
+    },
+    {
+      "stage": "layer2_spatial_second",
+      "class_id": 10,
+      "class": "pavement",
+      "p02": 0.44938312470912933,
+      "p98": 0.6519826352596283,
+      "raw_min": 0.4197677671909332,
+      "raw_max": 0.6855050325393677
+    },
+    {
+      "stage": "layer2_spatial_second",
+      "class_id": 11,
+      "class": "sand",
+      "p02": 0.3735706955194473,
+      "p98": 0.607435941696167,
+      "raw_min": 0.36608150601387024,
+      "raw_max": 0.648949921131134
+    },
+    {
+      "stage": "layer2_spatial_second",
+      "class_id": 12,
+      "class": "sea",
+      "p02": 0.3509274125099182,
+      "p98": 0.41975781321525574,
+      "raw_min": 0.3432861566543579,
+      "raw_max": 0.4293355643749237
+    },
+    {
+      "stage": "layer2_spatial_second",
+      "class_id": 13,
+      "class": "ship",
+      "p02": 0.3627746105194092,
+      "p98": 0.43649762868881226,
+      "raw_min": 0.3568164110183716,
+      "raw_max": 0.44968947768211365
+    },
+    {
+      "stage": "layer2_spatial_second",
+      "class_id": 14,
+      "class": "tanks",
+      "p02": 0.35603655874729156,
+      "p98": 0.39787557721138,
+      "raw_min": 0.3530958592891693,
+      "raw_max": 0.4079863429069519
+    },
+    {
+      "stage": "layer2_spatial_second",
+      "class_id": 15,
+      "class": "trees",
+      "p02": 0.3629853129386902,
+      "p98": 0.4030378460884094,
+      "raw_min": 0.356155127286911,
+      "raw_max": 0.41447046399116516
+    },
+    {
+      "stage": "layer2_spatial_second",
+      "class_id": 16,
+      "class": "water",
+      "p02": 0.3402407020330429,
+      "p98": 0.4096378684043884,
+      "raw_min": 0.3302730321884155,
+      "raw_max": 0.41685038805007935
+    },
+    {
+      "stage": "layer2_class_second",
+      "class_id": 0,
+      "class": "airplane",
+      "p02": 0.4530767351388931,
+      "p98": 0.5832550823688507,
+      "raw_min": 0.4413425028324127,
+      "raw_max": 0.6182368397712708
+    },
+    {
+      "stage": "layer2_class_second",
+      "class_id": 1,
+      "class": "bare soil",
+      "p02": 0.4712400585412979,
+      "p98": 0.6381504833698273,
+      "raw_min": 0.4487511217594147,
+      "raw_max": 0.6721091270446777
+    },
+    {
+      "stage": "layer2_class_second",
+      "class_id": 2,
+      "class": "buildings",
+      "p02": 0.4444722831249237,
+      "p98": 0.508554995059967,
+      "raw_min": 0.4179328382015228,
+      "raw_max": 0.5339025855064392
+    },
+    {
+      "stage": "layer2_class_second",
+      "class_id": 3,
+      "class": "cars",
+      "p02": 0.436992809176445,
+      "p98": 0.5160512924194336,
+      "raw_min": 0.42471879720687866,
+      "raw_max": 0.5429578423500061
+    },
+    {
+      "stage": "layer2_class_second",
+      "class_id": 4,
+      "class": "chaparral",
+      "p02": 0.41004419326782227,
+      "p98": 0.5069088935852051,
+      "raw_min": 0.389912486076355,
+      "raw_max": 0.5344630479812622
+    },
+    {
+      "stage": "layer2_class_second",
+      "class_id": 5,
+      "class": "court",
+      "p02": 0.45534078776836395,
+      "p98": 0.5188474357128143,
+      "raw_min": 0.4491216540336609,
+      "raw_max": 0.5350846648216248
+    },
+    {
+      "stage": "layer2_class_second",
+      "class_id": 6,
+      "class": "dock",
+      "p02": 0.4507555514574051,
+      "p98": 0.5224975645542145,
+      "raw_min": 0.44356247782707214,
+      "raw_max": 0.5443788766860962
+    },
+    {
+      "stage": "layer2_class_second",
+      "class_id": 7,
+      "class": "field",
+      "p02": 0.4413850009441376,
+      "p98": 0.5233702957630157,
+      "raw_min": 0.4352501630783081,
+      "raw_max": 0.5425529479980469
+    },
+    {
+      "stage": "layer2_class_second",
+      "class_id": 8,
+      "class": "grass",
+      "p02": 0.4272936135530472,
+      "p98": 0.5774548947811127,
+      "raw_min": 0.3984914720058441,
+      "raw_max": 0.6021431088447571
+    },
+    {
+      "stage": "layer2_class_second",
+      "class_id": 9,
+      "class": "mobile home",
+      "p02": 0.4677284210920334,
+      "p98": 0.5301496684551239,
+      "raw_min": 0.4581587016582489,
+      "raw_max": 0.5481411218643188
+    },
+    {
+      "stage": "layer2_class_second",
+      "class_id": 10,
+      "class": "pavement",
+      "p02": 0.4741417169570923,
+      "p98": 0.7308349013328552,
+      "raw_min": 0.38497114181518555,
+      "raw_max": 0.7633049488067627
+    },
+    {
+      "stage": "layer2_class_second",
+      "class_id": 11,
+      "class": "sand",
+      "p02": 0.4623182713985443,
+      "p98": 0.6384610831737518,
+      "raw_min": 0.4524046778678894,
+      "raw_max": 0.6845582723617554
+    },
+    {
+      "stage": "layer2_class_second",
+      "class_id": 12,
+      "class": "sea",
+      "p02": 0.420640230178833,
+      "p98": 0.5047131478786469,
+      "raw_min": 0.40647396445274353,
+      "raw_max": 0.533873975276947
+    },
+    {
+      "stage": "layer2_class_second",
+      "class_id": 13,
+      "class": "ship",
+      "p02": 0.4432527869939804,
+      "p98": 0.517808198928833,
+      "raw_min": 0.42302271723747253,
+      "raw_max": 0.5425812005996704
+    },
+    {
+      "stage": "layer2_class_second",
+      "class_id": 14,
+      "class": "tanks",
+      "p02": 0.4455489218235016,
+      "p98": 0.502260148525238,
+      "raw_min": 0.4303228259086609,
+      "raw_max": 0.5376496315002441
+    },
+    {
+      "stage": "layer2_class_second",
+      "class_id": 15,
+      "class": "trees",
+      "p02": 0.4315729886293411,
+      "p98": 0.5125450789928436,
+      "raw_min": 0.40446531772613525,
+      "raw_max": 0.5480286478996277
+    },
+    {
+      "stage": "layer2_class_second",
+      "class_id": 16,
+      "class": "water",
+      "p02": 0.4438423365354538,
+      "p98": 0.5077306628227234,
+      "raw_min": 0.4373893141746521,
+      "raw_max": 0.530148446559906
+    }
+  ]
+}

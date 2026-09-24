@@ -1,0 +1,84 @@
+{
+  "dlrsd": {
+    "output": "/mnt/data6/yc/open-vocab/PCA-Seg-Remote/output/smoke_dlrsd_aff_residual_moe_2gpu_bs4_final_20260906",
+    "fusion": "aff_residual_moe",
+    "checkpoint_iteration": 1,
+    "aff_modules": 4,
+    "bn_updates": {
+      "sem_seg_head.predictor.transformer.layers.0.fusion_by_channel_first.": 2,
+      "sem_seg_head.predictor.transformer.layers.0.fusion_by_channel_second.": 2,
+      "sem_seg_head.predictor.transformer.layers.1.fusion_by_channel_first.": 2,
+      "sem_seg_head.predictor.transformer.layers.1.fusion_by_channel_second.": 2
+    },
+    "residual_scales": {
+      "sem_seg_head.predictor.transformer.layers.0.fusion_by_channel_first.": 0.49974459409713745,
+      "sem_seg_head.predictor.transformer.layers.0.fusion_by_channel_second.": 0.5002923011779785,
+      "sem_seg_head.predictor.transformer.layers.1.fusion_by_channel_first.": 0.4997204840183258,
+      "sem_seg_head.predictor.transformer.layers.1.fusion_by_channel_second.": 0.49970823526382446
+    },
+    "train_metrics": {
+      "data_time": 1.8331106235273182,
+      "iteration": 1,
+      "loss_organ": 7.036447823338676e-05,
+      "loss_rs_dino_context": 1.283793419599533,
+      "loss_sem_seg": 0.6809458583593369,
+      "lr": 0.0001,
+      "rank_data_time": 1.7973728370852768,
+      "total_loss": 1.9648096424371033
+    },
+    "evaluation": {
+      "sem_seg/fwIoU": 21.75810764662205,
+      "sem_seg/mACC": 14.002595272826824,
+      "sem_seg/mIoU": 7.41795815263334,
+      "sem_seg/pACC": 23.250961303710938
+    },
+    "gradient_stride_warning": false,
+    "checkpoint_bytes": 878259455
+  },
+  "isaid": {
+    "output": "/mnt/data6/yc/open-vocab/PCA-Seg-Remote/output/smoke_isaid_aff_residual_moe_2gpu_bs4_final_20260906",
+    "fusion": "aff_residual_moe",
+    "checkpoint_iteration": 1,
+    "aff_modules": 4,
+    "bn_updates": {
+      "sem_seg_head.predictor.transformer.layers.0.fusion_by_channel_first.": 2,
+      "sem_seg_head.predictor.transformer.layers.0.fusion_by_channel_second.": 2,
+      "sem_seg_head.predictor.transformer.layers.1.fusion_by_channel_first.": 2,
+      "sem_seg_head.predictor.transformer.layers.1.fusion_by_channel_second.": 2
+    },
+    "residual_scales": {
+      "sem_seg_head.predictor.transformer.layers.0.fusion_by_channel_first.": 0.5002691745758057,
+      "sem_seg_head.predictor.transformer.layers.0.fusion_by_channel_second.": 0.5002883672714233,
+      "sem_seg_head.predictor.transformer.layers.1.fusion_by_channel_first.": 0.5002604722976685,
+      "sem_seg_head.predictor.transformer.layers.1.fusion_by_channel_second.": 0.5002994537353516
+    },
+    "train_metrics": {
+      "data_time": 1.8285281737335026,
+      "iteration": 1,
+      "loss_organ": 4.1325072743347846e-05,
+      "loss_rs_dino_context": 1.2715196013450623,
+      "loss_sem_seg": 0.6639700084924698,
+      "lr": 0.0001,
+      "rank_data_time": 1.776737928390503,
+      "total_loss": 1.9355309349102754
+    },
+    "evaluation": {
+      "sem_seg/fwIoU": 4.7596923588339894,
+      "sem_seg/mACC": 2.909342437150476,
+      "sem_seg/mIoU": 2.4142511917753757,
+      "sem_seg/pACC": 4.769015398973401
+    },
+    "gradient_stride_warning": false,
+    "checkpoint_bytes": 878259455
+  },
+  "sha256": {
+    "cat_seg/modeling/transformer/model.py": "1d1c978d2e14b7aa8c7908c6ab9aadc2bf80fcf0592b1f8efb41bd7f53de84de",
+    "cat_seg/modeling/transformer/aff_residual_moe.py": "0454be818c05aa0f39a0c4283f16d55fbaf77b913d537b07d7f4d851d1c80721",
+    "scripts/train_rs_dino_rskt_protocol_2gpu_bs4.sh": "61ead79e79cf8fb6bf9de91aa03ba3c8eda39519a553613f39db5bc822b87fa0",
+    "scripts/train_aff_residual_moe_2gpu_bs4.sh": "a13253f3d17d202614a002bcd0ad56ffab2a453f42e6c72ab655a4233a82480c",
+    "scripts/smoke_test_aff_residual_moe_2gpu.sh": "c01156191b7a2fb3e59236bdb61c03511ad4ff33a9bfbd16b77306626df4457d",
+    "configs/eva_vitb_384_dlrsd_attr64_rs_dino_aff_residual_moe.yaml": "c23506edb27dc67edca52e63aa1a8e11486abe17e5868f866fdab39f8ff63219",
+    "configs/eva_vitb_384_isaid_attr64_rs_dino_aff_residual_moe.yaml": "789fb16dfa77590aba2ed5687cdd6165d55bef1cb89e134ccd716eb53923b2a9",
+    "tools/test_aff_residual_moe.py": "5779e9459f02e87f3d25450adf76d95185c88e0fd3deba8ccd3a4fa33936b8bb"
+  }
+}

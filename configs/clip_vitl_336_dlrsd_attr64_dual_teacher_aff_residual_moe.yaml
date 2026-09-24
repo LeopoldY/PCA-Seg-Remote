@@ -1,0 +1,19 @@
+_BASE_: clip_vitb_384_dlrsd_attr64_dual_teacher_aff_residual_moe.yaml
+MODEL:
+  SEM_SEG_HEAD:
+    CLIP_PRETRAINED: "ViT-L/14@336px"
+    CACHE_DIR: "pretrained/ViT-L-14-336px.pt"
+    TEXT_GUIDANCE_DIM: 768
+    APPEARANCE_GUIDANCE_DIM: 768
+    ATTR_FUSION:
+      ENABLED: true
+      DATABASE_PATH: "attributes_text/rskt_seg/DLRSD_train_desc_remoteclip_l14_cluster_64_embedding_bank.pth"
+    # Preserve the ViT-L experiment weights independently of ViT-B.
+    RS_DINO_DISTILL:
+      LOSS_WEIGHT: 1.0e-5
+    REMOTE_CLIP_DISTILL:
+      LOSS_WEIGHT: 5.0e-5
+      MODEL_NAME: "ViT-L-14"
+      WEIGHTS: "pretrained/RemoteCLIP-ViT-L-14.pt"
+      TEACHER_BATCH_SIZE: 8
+OUTPUT_DIR: "output/clip_vitl_336_dlrsd_attr64_dual_teacher_aff_residual_moe_remoteclip_attr_2gpu_bs4"

@@ -1,0 +1,7 @@
+_BASE_: eva_vitb_384_attr_fusion.yaml
+MODEL:
+  SEM_SEG_HEAD:
+    ATTR_FUSION:
+      # Keep attribute-enhanced text for cost-volume construction, but use
+      # original class guidance and no attribute retention gates in Aggregator.
+      AGGREGATOR_ENABLED: false
