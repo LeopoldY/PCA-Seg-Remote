@@ -1,0 +1,16 @@
+_BASE_: clip_vitb_384_isaid_attr64_semantic_kl.yaml
+
+# Same KL/dual-teacher protocol; train this fusion head from a fresh start.
+# MULTISCALE_MOE inherited from the parent is unused by this fusion type.
+MODEL:
+  WEIGHTS: ""
+  SEM_SEG_HEAD:
+    FEATURE_FUSION:
+      TYPE: "rs_structure_dual_feature_moe"
+      RS_STRUCTURE_MOE:
+        TAU: 0.1
+        CORRECTION_MAX: 0.5
+        CORRECTION_INIT: 0.1
+        DETACH_GUIDANCE: true
+
+OUTPUT_DIR: "output/isaid_clip_vitb_semantic_kl_rs_structure"

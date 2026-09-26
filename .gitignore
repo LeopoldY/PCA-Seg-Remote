@@ -222,3 +222,4 @@ output/
 pretrained/
 datasets/*.pt
 datasets/**/*.pt
+outputs/

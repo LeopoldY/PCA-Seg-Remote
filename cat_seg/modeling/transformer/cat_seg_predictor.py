@@ -191,9 +191,16 @@ class CATSegPredictor(nn.Module):
         ret["clip_rotation_enabled"] = rotation_cfg.ENABLED
         fusion_cfg = cfg.MODEL.SEM_SEG_HEAD.FEATURE_FUSION
         sparse_cfg = fusion_cfg.SPARSE_TRANSFORMER
+        rs_structure_cfg = fusion_cfg.RS_STRUCTURE_MOE
         ret["feature_fusion_cfg"] = {
             "type": fusion_cfg.TYPE,
             "kernel_sizes": list(fusion_cfg.MULTISCALE_MOE.KERNEL_SIZES),
+            "rs_structure_moe": {
+                "tau": rs_structure_cfg.TAU,
+                "correction_max": rs_structure_cfg.CORRECTION_MAX,
+                "correction_init": rs_structure_cfg.CORRECTION_INIT,
+                "detach_guidance": rs_structure_cfg.DETACH_GUIDANCE,
+            },
             "num_heads": sparse_cfg.NUM_HEADS,
             "num_routed_experts": sparse_cfg.NUM_ROUTED_EXPERTS,
             "top_k": sparse_cfg.TOP_K,

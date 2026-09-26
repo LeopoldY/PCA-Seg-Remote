@@ -17,6 +17,7 @@ import os
 
 from .dual_route_sparse_transformer import DualRouteSparseTransformer
 from .aff_residual_moe import AFFResidualMoE
+from .rs_structure_dual_feature_moe import RSStructureDualFeatureMoE
 
 # Modified Swin Transformer blocks for guidance implementetion
 # https://github.com/microsoft/Swin-Transformer/blob/main/models/swin_transformer.py
@@ -635,6 +636,10 @@ def build_feature_fusion(dim, feature_fusion_cfg=None):
         return DualFeatureMoE(
             dim,
             kernel_sizes=feature_fusion_cfg.get("kernel_sizes", [1, 3, 5, 7]),
+        )
+    if fusion_type == "rs_structure_dual_feature_moe":
+        return RSStructureDualFeatureMoE(
+            dim, **feature_fusion_cfg.get("rs_structure_moe", {})
         )
     if fusion_type == "aff_residual_moe":
         return AFFResidualMoE(dim)

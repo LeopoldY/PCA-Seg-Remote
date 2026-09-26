@@ -43,7 +43,7 @@ COMMAND+=(OUTPUT_DIR "${OUTPUT_DIR}"
   MODEL.SEM_SEG_HEAD.REMOTE_CLIP_DISTILL.WEIGHTS "${REMOTECLIP_CHECKPOINT}"
   MODEL.SEM_SEG_HEAD.ATTR_FUSION.DATABASE_PATH "${ATTRIBUTE_DATABASE}"
   "$@")
-echo "Dataset=${DATASET}; GPUs=${GPU_IDS}; student=OpenAI CLIP ViT-B/16; fusion=DualFeatureMoE"
+echo "Dataset=${DATASET}; GPUs=${GPU_IDS}; student=OpenAI CLIP ViT-B/16; config=${CONFIG}"
 echo "Attributes=${ATTRIBUTE_DATABASE}"
 echo "Output=${OUTPUT_DIR}"
 if [[ "${DRY_RUN:-0}" == "1" ]]; then
