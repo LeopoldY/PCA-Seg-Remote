@@ -18,6 +18,7 @@ import os
 from .dual_route_sparse_transformer import DualRouteSparseTransformer
 from .aff_residual_moe import AFFResidualMoE
 from .rs_structure_dual_feature_moe import RSStructureDualFeatureMoE
+from .learned_dual_feature_fusion import LearnedDualFeatureFusion
 
 # Modified Swin Transformer blocks for guidance implementetion
 # https://github.com/microsoft/Swin-Transformer/blob/main/models/swin_transformer.py
@@ -632,6 +633,8 @@ def build_feature_fusion(dim, feature_fusion_cfg=None):
     if fusion_type == "dual_feature_moe":
         # Keep this exact construction path for old configs/checkpoints.
         return DualFeatureMoE(dim)
+    if fusion_type == "learned_dual_feature_fusion":
+        return LearnedDualFeatureFusion(dim)
     if fusion_type == "multi_scale_dual_feature_moe":
         return DualFeatureMoE(
             dim,
